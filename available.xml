@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE modules SYSTEM "modules.dtd">
+<modules>
+  <source url="https://raw.githubusercontent.com/Mio44/xfilesccg/master/"/>
+  <module name="xf" version="1.00.00">
+  </module>
+  <module name="xf-server" version="1.00.00">
+	<requires name="xf" version="1.00.00" />	
+  </module>
+  <module name="xf-cards" version="1.00.00">
+  </module>   	
+</modules>
