@@ -60,7 +60,7 @@ To keep everything updated, run `./gccg_package update` while the game is not ru
 
 ### Windows
 
-* Download and extract [The Windows Installer](http://gccg.sourceforge.net/downloads/gccg_install.zip) to your hard drive, e.g. to a folder called `gccg`.
+* Download and extract the [Windows installer](http://gccg.sourceforge.net/downloads/gccg_install.zip) to your hard drive, e.g. to a folder called `gccg`.
 * Run the following commands in the extracted folder:
 ```
 perl gccg_package source add https://raw.githubusercontent.com/Mio44/xfilesccg/master/
@@ -77,7 +77,7 @@ That means you will be able to browse the cards and build decks, but you won't b
 * Press Ctrl+B to view the card collection. These are all the cards in the game.
 * Press Ctrl+I to import one of the predefined decks.
 * Press Ctrl+E to edit the active deck.
-* For the steps to create your own deck from scratch, see (http://gccg.sourceforge.net/).
+* For the steps to create your own deck from scratch, or other things, see the [GCCG homepage](http://gccg.sourceforge.net/).
 
 # Online Mode
 
