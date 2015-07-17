@@ -104,25 +104,29 @@ The server itself consists of 3 or more separate processes which you need to run
 ./gccg_package install server xf-server
 ```
 * To run the factory server, use the command  
-`./ccg_server --load factory-server.triggers Xf.xml`.  
+`./ccg_server --load factory-server.triggers Xf.xml`
 * To run the meta server, use the command  
-`./ccg_server --load meta-server.triggers Xf.xml`.  
+`./ccg_server --load meta-server.triggers Xf.xml`
 * To run a table for 1 player, use the command  
-`./ccg_server --players 1 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.  
+`./ccg_server --players 1 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`
 * To run a table for 2 players, use the command  
-`./ccg_server --players 2 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.
+`./ccg_server --players 2 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`
 
 ### Windows
 
-To install the server module, run the following commands in your game installation folder:
+* To install the server module, run the following commands in your game installation folder:
 ```
 perl gccg_package update
 perl gccg_package install server xf-server
 ```
-To run the factory server, use the command `ccg_server.exe --load factory-server.triggers Xf.xml`.  
-To run the meta server, use the command `ccg_server.exe --load meta-server.triggers Xf.xml`.  
-To run a table for 1 player, use the command `ccg_server.exe --players 1 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.  
-To run a table for 2 players, use the command `ccg_server.exe --players 2 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.
+* To run the factory server, use the command  
+`ccg_server.exe --load factory-server.triggers Xf.xml`
+* To run the meta server, use the command  
+`ccg_server.exe --load meta-server.triggers Xf.xml`
+* To run a table for 1 player, use the command  
+`ccg_server.exe --players 1 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`
+* To run a table for 2 players, use the command  
+`ccg_server.exe --players 2 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`
 
 ### Connecting
 
