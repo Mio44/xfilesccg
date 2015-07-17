@@ -27,7 +27,6 @@ For installing from source, keep in mind that some Linux distributions (such as 
 ##### Binaries
 
 There are pre-built binaries available for the most common platforms.  
-Depending on your system, replace the `<platform>` placeholder in the following commands with one of `darwin-i386`, `linux-i386`, `linux-x86_64`.  
 Run the following commands, e.g. in your home directory:
 ```
 mkdir gccg
@@ -38,6 +37,7 @@ tar xzvf gccg-core-1.0.11.tgz
 ./gccg_package update
 ./gccg_package install client fonts <platform> xf xf-cards
 ```
+Depending on your system, replace the `<platform>` placeholder in the following commands with one of `darwin-i386`, `linux-i386`, `linux-x86_64`.
 
 ##### Source
 
@@ -98,15 +98,19 @@ The server itself consists of 3 or more separate processes which you need to run
 
 ### Linux & Mac
 
-To install the server module, run the following commands in your game installation directory:
+* To install the server module, run the following commands in your game installation directory:
 ```
 ./gccg_package update
 ./gccg_package install server xf-server
 ```
-To run the factory server, use the command `./ccg_server --load factory-server.triggers Xf.xml`.  
-To run the meta server, use the command `./ccg_server --load meta-server.triggers Xf.xml`.  
-To run a table for 1 player, use the command `./ccg_server --players 1 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.  
-To run a table for 2 players, use the command `./ccg_server --players 2 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.
+* To run the factory server, use the command  
+`./ccg_server --load factory-server.triggers Xf.xml`.  
+* To run the meta server, use the command  
+`./ccg_server --load meta-server.triggers Xf.xml`.  
+* To run a table for 1 player, use the command  
+`./ccg_server --players 1 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.  
+* To run a table for 2 players, use the command  
+`./ccg_server --players 2 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.
 
 ### Windows
 
