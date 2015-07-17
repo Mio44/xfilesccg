@@ -1,4 +1,4 @@
-# The X-Files CCG module for ([GCCG](http://gccg.sourceforge.net/))
+# The X-Files CCG module for [GCCG](http://gccg.sourceforge.net/)
 
 This is not a standalone program, it is an add-on module for the GCCG platform to allow online play of The X-Files CCG.
 Also note that following the below steps will only allow you to run a client in offline mode.
@@ -9,12 +9,12 @@ For the latter, you need to connect your client to a game server, which currentl
 
 The installation of the game client varies based on the platform of your system.
 
-## Linux & Mac
+### Linux & Mac
 
 You need to install the packages listed in the prerequisities. 
 Then, you can choose either the binaries installation, or the source installation.
 
-### Prerequisities
+##### Prerequisities
 
 The following packages are required prior to installation. 
 For installing from source, keep in mind that some Linux distributions (such as Ubuntu) require *-dev packages in order to install the headers for these libraries.
@@ -27,7 +27,7 @@ For installing from source, keep in mind that some Linux distributions (such as 
 * libjpeg
 * libpng3
 
-### Binaries
+##### Binaries
 
 There are pre-built binaries available for the most common platforms.
 Depending on your system, replace the `<platform>` placeholder in the following commands with one of `darwin-i386`, `linux-i386`, `linux-x86_64`.
@@ -42,7 +42,7 @@ tar xzvf gccg-core-1.0.11.tgz
 ./gccg_package install client fonts <platform> xf xf-cards
 ```
 
-### Source
+##### Source
 
 Run the following commands, e.g. in your home directory:
 ```
@@ -56,12 +56,12 @@ tar xzvf gccg-core-1.0.11.tgz
 make all
 ```
 
-### Running
+##### Running
 
 To start the client, run `./Xf`.
 To keep everything updated, run `./gccg_package update` while the game is not running.
 
-## Windows
+### Windows
 
 * Download and extract [The Windows Installer](http://gccg.sourceforge.net/downloads/gccg_install.zip) to your hard drive, e.g. to a folder called `gccg`.
 * Run the following commands in the extracted folder:
@@ -103,7 +103,7 @@ The server itself consists of 3 or more separate processes which you need to run
 * 1 meta server
 * 1 or more table servers
 
-## Linux & Mac
+### Linux & Mac
 
 To install the server module, run the following commands in your game installation directory:
 
@@ -116,7 +116,7 @@ To run the meta server, use the command `./ccg_server --load meta-server.trigger
 To run a table for 1 player, use the command `./ccg_server --players 1 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.
 To run a table for 2 players, use the command `./ccg_server --players 2 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.
 
-## Windows
+### Windows
 
 To install the server module, run the following commands in your game installation folder:
 
@@ -129,7 +129,7 @@ To run the meta server, use the command `ccg_server.exe --load meta-server.trigg
 To run a table for 1 player, use the command `ccg_server.exe --players 1 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.
 To run a table for 2 players, use the command `ccg_server.exe --players 2 --bet 0 --rules Xf.rules --load server.triggers Xf.xml`.
 
-## Connecting
+### Connecting
 
 If you have a game server running on your PC and want to connect the game client to it, you can launch it without the `--server` parameter.
 The client automatically connects to a server running on the same PC.
