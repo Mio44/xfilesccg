@@ -86,6 +86,7 @@ You need to know the URL or IP address of the game server to do that.
 Then, simply start the client with the following command:
 * on Linux & Mac, use `./Xf --server <url/ip>`
 * on Windows, use `Xf.bat --server <url/ip>`
+
 Note: currently, no public game server exists.
 
 # Server
