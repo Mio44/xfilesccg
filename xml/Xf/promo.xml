@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
+<ccg-setinfo name="Promo Cards" game="The X-Files CCG" dir="promo" abbrev="PRO">
+    <cards>
+        <card name="THE DARK ANGEL" text="The Dark Angel can play all combat cards for one Conspiracy less." graphics="PR96-0001-SCR.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="10 CP"/>
+            <attr key="costnumber" value="10"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Occult Creature, Phenomena, Master"/>
+            <attr key="id" value="PR96-0001-SCR"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Die Hand Die Verletzt"/>
+            <attr key="activators" value="Conspiracy, Affiliation Site"/>
+            <attr key="closeRangeCombat" value="8"/>
+            <attr key="longRangeCombat" value="5"/>
+            <attr key="health" value="10"/>
+        </card>
+        <card name="FIGHTER INTERCEPTOR" text="Negates an Alien Adversary." graphics="PR96-0002-INQ.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Negate"/>
+            <attr key="id" value="PR96-0002-INQ"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="EBE"/>
+            <attr key="activators" value="Active, Alien, Adversary"/>
+        </card>
+        <card name="ALIEN TECHNOLOGY"
+            text="Play after one of your Teams successfully investigates a Site with ALIEN INVESTIGATION or BUREAUCRACY skill as a prerequisite. Place this card in your Bureau. Discard this card to negate one ALIEN or GOVERNMENT Adversary."
+            graphics="PR96-0003-GAM.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Resource, Alien, Government"/>
+            <attr key="id" value="PR96-0003-GAM"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="The Erlenmyer Flask"/>
+            <attr key="activators" value="Active, Site"/>
+        </card>
+        <card name="NO ONE SO PARANOID" text="Play this card to gain one of the following: Adds +1 to Computer skill, negates one Event, or discard one Bluff card from a site." graphics="PR96-0004-GCON.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="5 RP"/>
+            <attr key="costnumber" value="5"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR96-0004-GCON"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="EBE"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="CHESTER BONAPARTE, THE SPIRIT GUIDE" text="Negate one OCCULT Adversary. In addition, if the Team makes an OCCULT INVESTIGATION skill check of 6+, they may ask either one METHOD question or one RESULT question."
+            graphics="PR96-0005-GMR.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="5 RP"/>
+            <attr key="costnumber" value="5"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Negate, Question, Occult, Phenomena"/>
+            <attr key="id" value="PR96-0005-GMR"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Fresh Bones"/>
+            <attr key="activators" value="Active, Occult Adversary"/>
+        </card>
+        <card name="AGENT HENDERSON" text="Place a token on this card. Discard a token and look through your Bureau deck to draw any Site that asks a MOTIVE question. Add it to your hand, reshuffle your Bureau deck." graphics="PR96-0006-DUE.jpg">
+            <attr key="type" value="Agent"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Agent, FBI, Law"/>
+            <attr key="id" value="PR96-0006-DUE"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Young at Heart"/>
+            <attr key="criminalInvestigation" value="1"/>
+            <attr key="evidenceCollection" value="3"/>
+            <attr key="observation" value="2"/>
+            <attr key="sciences" value="2"/>
+            <attr key="res" value="1"/>
+            <attr key="closeRangeCombat" value="1"/>
+            <attr key="longRangeCombat" value="1"/>
+            <attr key="health" value="3"/>
+        </card>
+        <card name="TEAMWORK"
+            text="Play this card on any Team consisting of no more than two Agents during the Investigation Phase when they are sent to investigat a Site. You may add a number of tokens to the Resource pool equal to the Agents' total RES value."
+            graphics="PR96-0007-SUR.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="0 RP"/>
+            <attr key="costnumber" value="0"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR96-0007-SUR"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="EBE"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="BELIEVE THE LIE" text="Exchange your X-File with ALIEN Affiliation with any X-File with GOVERNMENT Affiliation." graphics="PR97-0001-BBB.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="12CP"/>
+            <attr key="costnumber" value="1"/>
+            <attr key="costsuit" value="2CP"/>
+            <attr key="keywords" value="Event, Government, Alien Investigation"/>
+            <attr key="id" value="PR97-0001-BBB"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Gethsemane"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="INFECTED THAT YOU MIGHT BELIEVE"
+            text="Play this card and place it beneath one Agent to lower all of that Agent's skill levels by 1. This cannot result in a skill being negative or permanent Health being less than 1. When played on Agent Dana Scully, the conspiracy player may choose to force Scully to spend every other turn in the Hospital (if this option is chosen, Scully's skills are not reduced). This choice must be made when the card is played and cannot be changed later. Healing cards will negate this card."
+            graphics="PR97-0002-BBB.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="6 CP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Event, Government, Resource"/>
+            <attr key="id" value="PR97-0002-BBB"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Gethsemane"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="A FINAL CHOICE"
+            text="Play this card to immediately move one opposing Agent to the Hospital. Place this card beneath the Agent and place five tokens on the Agent (seven tokens if played on Agent Mulder). Remove a token during the Agent's Healing Phase. When all tokens have been removed, discard this card. The Agent may leave the Hospital when all tokens have been removed."
+            graphics="PR97-0003-BBB.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="9 CP"/>
+            <attr key="costnumber" value="9"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff, Government, Resource"/>
+            <attr key="id" value="PR97-0003-BBB"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Gethsemane"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="GOOD FORTUNE" text="Once this card is played, only the Investigating player may play Events while investigating this Site, except for Events which would negate this card. Discard this card when the Site is discarded."
+            graphics="PR97-0004-BOX.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0004-BOX"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Clyde Bruckman's Final Repose"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="MULLIGAN" text="Discard your entire hand and draw seven cards from the top of your Bureau Deck." graphics="PR97-0005-INQ.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="3 *P"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="*P"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0005-INQ"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Pusher"/>
+            <attr key="activators" value="Active, Conspiracy"/>
+        </card>
+        <card name="SMOKE &amp; MIRRORS" text="Apply a +1 modifier to any skill check." graphics="PR97-0006-SC1.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0006-SC1"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Humbug"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="SMOKE &amp; MIRRORS" text="Apply a -1 modifier to any skill check." graphics="PR97-0006-SC2.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="3 CP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0006-SC2"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Humbug"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="SMOKE &amp; MIRRORS" text="Apply a +2 modifier to any one opponent skill check." graphics="PR97-0006-SC3.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0006-SC3"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Humbug"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="SMOKE &amp; MIRRORS" text="Apply a -2 modifier to any one opponent skill check" graphics="PR97-0006-SC4.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0006-SC4"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Humbug"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="SMOKE &amp; MIRRORS" text="Apply a +3 or -3 (your choice) modifier to any skill check." graphics="PR97-0006-SC5.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="5 *P"/>
+            <attr key="costnumber" value="5"/>
+            <attr key="costsuit" value="*P"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0006-SC5"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Humbug"/>
+            <attr key="activators" value="Active, Conspiracy"/>
+        </card>
+        <card name="CALL ON US MORE OFTEN"
+            text="Play this card to search through your Bureau Deck and add one of the following cards to your hand: No One So Paranoid, The Lone Gunmen, Langly, Frohike, or Byers. If you play the chosen card immediately, you may do so for half Cost (round up)."
+            graphics="PR97-0007-BOX.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0007-BOX"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Apocrypha"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="BLUE PLATE SPECIAL" text="Play this card and flip over the next card on your Bureau Deck. If that card is ploayable this turn you may do so for zero RP or CP. If you do not play it this turn, move the card to your discard pile."
+            graphics="PR97-0009-GMR.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="0 *P"/>
+            <attr key="costnumber" value="0"/>
+            <attr key="costsuit" value="*P"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0009-GMR"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Piper Maru"/>
+            <attr key="activators" value="Active, Conspiracy"/>
+        </card>
+        <card name="JE VOIS QUELQUE CHOSE LA AU-DESSOUS"
+            text="Recherchez dans votre paquet de cartes FBI et choisissez une carte ALIEN Mot-clé ou ALIEN INVESTIGATION. Montrez cette carte à votre adversaire, ajoutez-la à votre jeu et mélangez le paquet de cartes FBI. English Translation: Search your Bureau deck and choose one keyword ALIEN or ALIEN INVESTIGATION card. Show this card to your opponent, add it to your hand and shuffle your Bureau deck."
+            graphics="PR97-0010-FRN.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="2*P"/>
+            <attr key="costsuit" value="2*P"/>
+            <attr key="keywords" value="Event, Phenomena"/>
+            <attr key="id" value="PR97-0010-FRN"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Piper Maru"/>
+            <attr key="activators" value="Active, Conspiracy"/>
+        </card>
+        <card name="DIE HAND DIE VERLETZT"
+            text="Spielen Sie diese Karte zum Durchsuchen Ihres Büro Stapels. Dann wählen Sie einen OCCULT Gegner, mit dem Sie automatisch den AgentenTeam zur Ortserkundung angehören. Der OCCULT Gegner kann anstatt der 0 gespielt werden, unter Mißachtung der Aktivierungs-Anforderungen. English Translation: You may search your Bureau deck and take any Occult Creature and you may play it on the agents team making the skill check. You may play it at any site. (Meaning you can play an Adversary with Activator Affiliation on a Motive, Method, or Result site as well.) This costs 0 CP."
+            graphics="PR97-0011-DEU.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="7CP"/>
+            <attr key="costsuit" value="7CP"/>
+            <attr key="keywords" value="Event, Phenomena"/>
+            <attr key="id" value="PR97-0011-DEU"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Die Hand Die Verletzt"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="NOT ON THE MENU" text="Draw 2 cards from the top of your Bureau deck and add them to your hand." graphics="PR97-0012-COM.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="2 *P"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="*P"/>
+            <attr key="keywords" value="Event, Bureaucracy"/>
+            <attr key="id" value="PR97-0012-COM"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Piper Maru"/>
+            <attr key="activators" value="Active, Conspiracy"/>
+        </card>
+        <card name="DENY EVERYTHING" text="Play this card immediately after your opponent asks you a question. You may respond with this phrase: &quot;I can neither confirm nor deny that assumption.&quot; After playing this card remove it from the game."
+            graphics="PR97-0999-DNY.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="8 CP"/>
+            <attr key="costnumber" value="8"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="PR97-0999-DNY"/>
+            <attr key="rarity" value="P"/>
+            <attr key="episode" value="Anasazi"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="THE GREGORS" text="" graphics="the-gregors.jpg">
+            <attr key="type" value="X-File"/>
+            <attr key="id" value="XF97-0130v2"/>
+            <attr key="rarity" value="F"/>
+            <attr key="episode" value="Colony"/>
+            <attr key="affiliation" value="Alien"/>
+            <attr key="motive" value="Security"/>
+            <attr key="method" value="Manipulation"/>
+            <attr key="result" value="Manipulation of Evidence"/>
+        </card>
+    </cards>
+</ccg-setinfo>

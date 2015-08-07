@@ -1,0 +1,237 @@
+screen.width=1024;
+screen.height=768;
+
+if(meta.server=="NO.DEFAULT.SERVER.FOR.THIS.GAME")
+  meta.server="localhost";
+
+if(!port)
+  port=32090;
+meta.port=29190;
+
+def InitServerHook
+{
+  GAME_PILES{'xfile'}=("reveal_1","protected");
+}
+
+def SetUpPlayer
+{ 
+  CreateDeck(ARG,"deck",40,45);
+  CreateDeck(ARG,"discard pile",40,150);
+  CreateDeck(ARG,"xfile",40,260);  
+}
+
+def InitialScore
+{
+  return (0);
+}
+
+def UploadDeckHook
+{
+  push(i);  
+  if (length(ARG[1]{"xfiles"}) > 0) {
+     Transfer(1,("out.of.play", ARG[1]{"xfiles"}[random(length(ARG[1]{"xfiles"}))]),("deck.top", FindDeck(ARG[0], "xfile")));
+  } else {
+     i=(,);
+     for(c)(cards()) {
+        if (card_attr("type",c) == "X-File") {
+           i=i+(c,);
+        }
+     }
+     Transfer(1,("out.of.play", i[random(length(i))]),("deck.top", FindDeck(ARG[0], "xfile")));
+  }  
+  
+  i=0;
+  for (a)(ARG[1]{"agents"}) {
+		Transfer(1,("out.of.play", a),("table", 150+(i*20), 80+(i*20), 0, 0));
+    i=i+1;
+  }
+	XfAddMarker(FindDeck(ARG[0], "deck"), NULL, 5);
+  XfAddMarker(FindDeck(ARG[0], "xfile"), NULL, 5);
+  i=pop();
+}
+
+def StartGameHook
+{
+	xf_know=(,);
+	for(p)(ARG) {
+		xf_know{p}=(,);
+		for(q)(ARG) {
+			xf_know{p}{q}=(,);
+		}
+	}
+}
+
+def SavegameHook
+{
+	return (xf_know);
+}
+
+def LoadgameHook
+{
+	xf_know=ARG;
+}
+
+#
+#  XfAddMarker(object number,marker type,[count]) - Add or del marker(s) on object. Override to add correct color to RP and CP.
+#
+function{"AddMarker"}="XfAddMarker";
+def XfAddMarker
+{
+  if (has_entry(toint(ARG[0]),decks)) {
+		if (decks{toint(ARG[0])}[2] == "deck")
+			ARG[1]=2;
+		else if (decks{toint(ARG[0])}[2] == "xfile")
+			ARG[1]=0;
+  }
+	AddMarker(ARG);  
+}
+
+#
+# CommandAsk(player, name, value)
+#
+function{"CommandAsk"}="CommandAsk";
+def CommandAsk
+{
+	push(m);
+  push(f);
+	push(pname);
+	push(oname);
+	push(opponent);
+	if (PlayerNumber(ARG[0]) >= 0 && PlayerNumber(ARG[0]) < players) {
+		pname=player.name{player};
+		oname=ARG[0];
+		opponent = PlayerNumber(ARG[0]);
+		if (lc(ARG[1]) == "xfile" || lc(ARG[1]) == "x-file") {
+			m = "{yellow}"+pname+": "+oname+"{white}, is the name of your X-File {yellow}"+uc(ARG[2])+"{white}?";
+			Send(player, ("Message",m));
+			if (player != opponent) Send(opponent, ("Message",m));
+			if (name(decks{FindDeck(opponent,"xfile")}[0][0]) == uc(ARG[2])) {
+				SendAll("Message", "{yellow}"+oname+": "+"{green}YES, the name of my X-File is {yellow}"+uc(ARG[2])+"{green}. The WINNER of the game is {yellow}"+pname+"{green}!");
+			} else {
+				m = "{yellow}"+oname+": "+"{red}NO, the name of my X-File is NOT {yellow}"+uc(ARG[2])+"{red}. If this was not a penalty question, I may ask {yellow}"+pname+"{red} a penalty question now!";
+				f = 'name != "'+uc(ARG[2])+'"';
+				xf_know{player}{opponent} = xf_know{player}{opponent} + (f,);			
+				Send(player, ("Message",m));
+				if (player != opponent) Send(opponent, ("Message",m));
+				if (players <= 2) {
+					Send(player, ("AnnounceKnow", xf_know{player}{opponent}));
+				}
+			}
+		} else if (find(lc(ARG[1]), ("affiliation", "motive", "method", "result")) != NULL) {
+			m = "{yellow}"+pname+": "+oname+"{white}, is the {yellow}"+ARG[1]+"{white} of your X-File {yellow}"+ARG[2]+"{white}?";
+			Send(player, ("Message",m));
+			if (player != opponent) Send(opponent, ("Message",m));
+			if (card_attr(lc(ARG[1]), decks{FindDeck(opponent,"xfile")}[0][0]) == ARG[2]) {
+				m = "{yellow}"+oname+": "+"{green}YES, the {yellow}"+ARG[1]+"{green} of my X-File is {yellow}"+ARG[2]+"{green}.";
+				f = lc(ARG[1])+'="'+ARG[2]+'"';
+			} else {
+				m = "{yellow}"+oname+": "+"{red}NO, the {yellow}"+ARG[1]+"{red} of my X-File is NOT {yellow}"+ARG[2]+"{red}.";
+				f = lc(ARG[1])+'!="'+ARG[2]+'"';
+			}
+			xf_know{player}{opponent} = xf_know{player}{opponent} + (f,);					
+			Send(player, ("Message",m));
+			if (player != opponent) Send(opponent, ("Message",m));		
+			if (players <= 2) {
+				Send(player, ("AnnounceKnow", xf_know{player}{opponent}));
+			}
+		} else {
+			Send(player, ("Message", "{red}You cannot ask a question about "+ARG[1]));
+		}
+	} else {
+		Send(player, ("Message", "{red}No such player: "+ARG[0]));
+	}
+	opponent=pop();
+	oname=pop();
+	pname=pop();
+  f=pop();
+  m=pop();
+}
+
+#
+# CommandKnow(player)
+#
+def CommandKnow
+{
+	if (PlayerNumber(ARG[0]) >= 0 && PlayerNumber(ARG[0]) < players) {
+	  Send(player, ("AnnounceKnow", xf_know{player}{PlayerNumber(ARG[0])}));
+	}	else {
+		Send(player, ("Message", "{red}No such player: "+ARG[0]));
+	}
+}
+
+#
+# CommandKnows(player)
+#
+def CommandKnows
+{
+	if (PlayerNumber(ARG[0]) >= 0 && PlayerNumber(ARG[0]) < players) {
+	  Send(player, ("AnnounceKnow", xf_know{PlayerNumber(ARG[0])}{player}));
+	}	else {
+		Send(player, ("Message", "{red}No such player: "+ARG[0]));
+	}
+}
+
+#
+# CommandRp(amount)
+#
+def CommandRp
+{
+	XfAddMarker(FindDeck(player, "deck"), NULL, toint(ARG[0]));
+}
+
+#
+# CommandCp(amount)
+#
+def CommandCp
+{
+	XfAddMarker(FindDeck(player, "xfile"), NULL, toint(ARG[0]));
+}
+
+#
+# WriteText(object number, text) - Write a line of text on an object, if it's a card.
+#
+function{"WriteText"}="WriteText";
+def WriteText
+{      
+  if(tostr(ARG)!=NULL)
+  {
+    if(has_entry(ARG[0],table))
+    {
+      SendAll("del_all_texts",(ARG[0]));
+      SendAll("add_text",(ARG[0]," "));
+      if(typeof(ARG[1])=="string")
+      {
+        clean_string="some text (client not updated)";
+        ARG[1]=(ARG[1],);
+      }
+      else
+      {
+        clean_string=last(ARG[1]);
+        ARG[1]=head(ARG[1]);
+      }
+      for(i)(ARG[1])
+        SendAll("add_text",(ARG[0],i));
+      push(p);
+      for(p)(watchers)
+      {
+        if(player==p)
+        {
+          Send(p,("Message",("You write {red}"+clean_string+"{reset} on "+ObjectName(p,ARG[0]))));
+        }
+        else
+        {
+          Send(p,("Message",(player.name{player}+" writes {red}"+clean_string+"{reset} on "+ObjectName(p,ARG[0]))));
+        }
+      }
+      p=pop();
+    }
+    else
+    {
+      Reply("{red}Can't add text to objects that are not cards in play");
+    }
+  }
+  else
+  {
+    Reply("{red}Error: no argument provided. See /help tx.");
+  }
+}

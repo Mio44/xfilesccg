@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
+<ccg-setinfo name=" " game="The X-Files CCG">
+
+  <cards>
+    <card name="Back Side" text="" graphics="back.jpg">
+    </card>
+    <card name="1" text="" graphics="">
+    </card>
+    <card name="2" text="" graphics="">
+    </card>
+    <card name="3" text="" graphics="">
+    </card>
+    
+    <card name="0" text="" graphics="">
+    </card>
+    <card name="1" text="" graphics="">
+    </card>
+    <card name="2" text="" graphics="">
+    </card>
+    <card name="3" text="" graphics="">
+    </card>
+    <card name="4" text="" graphics="">
+    </card>
+    <card name="5" text="" graphics="">
+    </card>
+    <card name="6" text="" graphics="">
+    </card>
+    <card name="7" text="" graphics="">
+    </card>
+    <card name="8" text="" graphics="">
+    </card>
+    <card name="9" text="" graphics="">
+    </card>
+    
+    <card name="0" text="" graphics="">
+    </card>
+    <card name="1" text="" graphics="">
+    </card>
+    <card name="2" text="" graphics="">
+    </card>
+    <card name="3" text="" graphics="">
+    </card>
+    <card name="4" text="" graphics="">
+    </card>
+    <card name="5" text="" graphics="">
+    </card>
+    <card name="6" text="" graphics="">
+    </card>
+    <card name="7" text="" graphics="">
+    </card>
+    <card name="8" text="" graphics="">
+    </card>
+    <card name="9" text="" graphics="">
+    </card>
+    
+    <card name="0" text="" graphics="">
+    </card>
+    <card name="1" text="" graphics="">
+    </card>
+    <card name="2" text="" graphics="">
+    </card>
+    <card name="3" text="" graphics="">
+    </card>
+    <card name="4" text="" graphics="">
+    </card>
+    <card name="5" text="" graphics="">
+    </card>
+    <card name="6" text="" graphics="">
+    </card>
+    <card name="7" text="" graphics="">
+    </card>
+    <card name="8" text="" graphics="">
+    </card>
+    <card name="9" text="" graphics="">
+    </card>
+    
+    <card name="0" text="" graphics="">
+    </card>
+    <card name="1" text="" graphics="">
+    </card>
+    <card name="2" text="" graphics="">
+    </card>
+    <card name="3" text="" graphics="">
+    </card>
+    <card name="4" text="" graphics="">
+    </card>
+    <card name="5" text="" graphics="">
+    </card>
+    <card name="6" text="" graphics="">
+    </card>
+    <card name="7" text="" graphics="">
+    </card>
+    <card name="8" text="" graphics="">
+    </card>
+    <card name="9" text="" graphics="">
+    </card>
+    
+    <card name="0" text="" graphics="">
+    </card>
+    <card name="1" text="" graphics="">
+    </card>
+    <card name="2" text="" graphics="">
+    </card>
+    <card name="3" text="" graphics="">
+    </card>
+    <card name="4" text="" graphics="">
+    </card>
+    <card name="5" text="" graphics="">
+    </card>
+    <card name="6" text="" graphics="">
+    </card>
+    <card name="7" text="" graphics="">
+    </card>
+    <card name="8" text="" graphics="">
+    </card>
+    <card name="9" text="" graphics="">
+    </card>
+  </cards>
+
+</ccg-setinfo>

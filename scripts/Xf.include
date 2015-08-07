@@ -1,0 +1,386 @@
+# VARIABLES
+# =========
+
+HANDSIZE=7;
+DECKBOX_SIZE=(20,500,100);
+
+if(server.name=="NO.DEFAULT.SERVER.FOR.THIS.GAME")
+  server.name="teferi.tk";
+
+if(!port)
+  port=29190;
+
+product.image=(,);
+
+game.bindings=(
+  ("KeyControlKey1","{orange}Briefing Phase (draw card, generate {RP}, buy cards, opponent generates {CP}, opponent buys cards)",),
+  ("KeyControlKey2","{orange}Healing Phase (heal agents in hospital, health 3- = +1, health 4+ = +2)",),
+  ("KeyControlKey3","{orange}Requisition Phase (assign and exchange equipment, no duplicates on single agent)",),
+  ("KeyControlKey4","{orange}Deployment Phase (move agents between locations, assign agent teams)",),
+  ("KeyControlKey5","{orange}Case Assignment Phase (play sites, choose skill, opponent plays bluffs face down, no duplicate sites)",),
+  ("KeyControlKey6","{orange}Investigation Phase (assign agent teams to sites, resolve bluffs, play and resolve cards, no duplicate cards)",),
+  ("KeyControlKey7","{orange}Combat (1xLRC, nxCRC, damage assignment decided by inflicting side, play combat cards)",),	
+  ("KeyControlKey8","{orange}Site Resolution (ask question, guess xfile, optionally opponent guesses xfile, discard sites with no bluffs)",),	
+  ("KeyControlKey9","{orange}Debriefing Phase (discard cards in hand to 7 or less)",),	
+);
+
+function{"add_text"}="add_text";
+function{"del_all_texts"}="del_all_texts";
+
+HELP{"play"}{"ask"}=("player, property name, property value","ask a question about a player's X-File",NULL, 
+"The {yellow}property name{white} should be one of {yellow}affiliation{white}, {yellow}motive{white}, {yellow}method{white}, {yellow}result{white} or {yellow}xfile{white} (used to guess the name of the X-File).");
+HELP{"play"}{"know"}=("player","print known facts about a player's X-File and set the collection filter accordingly",NULL, 
+"Use this command to discover what you have already asked about an opponent's X-File. After using this command, check the card collection (press CTRL+B) to see all the possible X-Files of the opponent that you have to guess.");
+HELP{"play"}{"knows"}=("player","print facts about your X-File which a player knows and set the collection filter accordingly",NULL, 
+"Use this command to discover what an opponent has already asked about your X-File. After using this command, check the card collection (press CTRL+B) to see all the possible X-Files that your opponent needs to guess.");
+HELP{"play"}{"rp"}=("amount","modify the current RP size by the specified amount",NULL, 
+"The {yellow}amount{white} can be a positive or negative number.");
+HELP{"play"}{"cp"}=("amount","modify the current CP size by the specified amount",NULL, 
+"The {yellow}amount{white} can be a positive or negative number.");
+HELP{"play"}{"tx"}=("text","add text to a card",NULL,
+"Write {yellow}text{white} on the card under the mouse pointer.");
+
+
+# FUNCTIONS
+# =========
+
+def NewDeck
+{
+  return((("agents",(,)),("deck",(,)),("xfiles",(,)),));
+}
+
+def InitializeLocationTables
+{
+  rules.category=(,);
+  rules.coordinate=(,);
+}
+
+def StartGame 
+{
+  Send("UploadDeck",decks{deck.name});
+  Send("ShuffleDeck",deck);
+}
+
+# MENUS
+# =====
+
+def PlayXfileMenu
+{
+  push(m);
+  m=(,);
+  if(card.number!=NULL)
+  {
+    m=m+(
+	  ("Ask","","AskSubmenu()"),	  
+	  ("Look","Ctrl+L",""),	  	  
+	  ("Reveal/Hide","Ctrl+F",""),	  
+      );
+  }
+
+  m=m+(
+    ("Touch","Ctrl+T",""),
+  );
+
+  Menu("X-File",m);
+  m=pop();
+}
+
+def PlayOpponentXfileMenu
+{
+  push(m);
+  m=(,);
+  if(card.number!=NULL)
+  {
+    m=m+(
+  	  ("Ask","","AskSubmenu()"),	  
+      );
+  }
+
+  m=m+(
+    ("Touch","Ctrl+T",""),
+  );
+
+  Menu("Opponent's X-File",m);
+  m=pop();
+}
+
+def AskSubmenu
+{
+  Submenu("Select Question",(
+	("Affiliation","", "AskAffiliationSubmenu()"),
+	("Motive","", "AskMotiveSubmenu()"),
+	("Method","", "AskMethodSubmenu()"),
+	("Result","", "AskResultSubmenu()"),
+  ));
+}
+
+def AskAffiliationSubmenu
+{
+  Submenu("Is your Affiliation",(
+	("Alien","", 'ask_question("Affiliation", "Alien")'),
+	("Government","", 'ask_question("Affiliation", "Government")'),
+	("Evolutionary","", 'ask_question("Affiliation", "Evolutionary")'),
+	("Primordial","", 'ask_question("Affiliation", "Primordial")'),
+  ("Occult","", 'ask_question("Affiliation", "Occult")'),
+  ));
+}
+
+def AskMotiveSubmenu
+{
+  Submenu("Is your Motive",(
+	("Survival","", 'ask_question("Motive", "Survival")'),
+	("Security","", 'ask_question("Motive", "Security")'),
+	("Control","", 'ask_question("Motive", "Control")'),
+	("Knowledge","", 'ask_question("Motive", "Knowledge")'),
+  ("Ideology","", 'ask_question("Motive", "Ideology")'),
+  ));
+}
+
+def AskMethodSubmenu
+{
+  Submenu("Is your Method",(
+	("Violence","", 'ask_question("Method", "Violence")'),
+	("Manipulation","", 'ask_question("Method", "Manipulation")'),
+	("Subterfuge","", 'ask_question("Method", "Subterfuge")'),
+	("Possession","", 'ask_question("Method", "Possession")'),
+  ("Threats","", 'ask_question("Method", "Threats")'),
+  ));
+}
+
+def AskResultSubmenu
+{
+  Submenu("Is your Result",(
+	("Death","", 'ask_question("Result", "Death")'),
+	("Insanity","", 'ask_question("Result", "Insanity")'),
+	("Physiological Imbalance","", 'ask_question("Result", "Physiological Imbalance")'),
+	("Abduction","", 'ask_question("Result", "Abduction")'),
+  ("Manipulation of Evidence","", 'ask_question("Result", "Manipulation of Evidence")'),
+  ));
+}
+
+def ask_question
+{  
+  Send("CommandAsk", (player.name{Owner(object.number)}, ARG[0], ARG[1]));
+}
+
+#
+# AnnounceKnow(filter) - Sets the collection filter to the received one.
+#
+function{"AnnounceKnow"}="AnnounceKnow";
+def AnnounceKnow
+{ 
+	CommandSelect((,));
+	CommandSelect('type="X-File"');
+	for(f)(ARG) {
+		Message("{orange}"+f);
+		CommandSelect(f);
+	}
+}
+
+# COMMANDS
+# ========
+
+#
+# text_parser(text) - Helper function for PlayCommandSettext
+#
+def text_parser
+{
+  if(length(ARG)>1 && toint(ARG[1])>0)
+  {
+    push(card_width);
+    push(characters);
+    push(clean_string);
+    push(current_line);
+    push(new_word);
+    push(new_string);
+    push(composite_string);
+    push(last_font);
+    push(last_color);
+    push(last_size);
+    push(last_align);
+    push(last_format);
+    push(i);
+    
+    card_width=toint(ARG[1])-4;
+    characters=split(ARG[0],"");
+    composite_string=(,);
+    clean_string="";
+    new_word="";
+    last_font="{font0}";
+    last_color="{red}";
+    last_size="{sz12}";
+    last_align="{center}";
+    last_format=last_align+last_size+last_color+last_font+"{shadow}";
+    current_line=last_format;
+    for(i)(length(characters))
+    {
+      new_string=characters[i];
+      if(characters[i]=="{")
+      {
+        while(characters[i]!="}" && i<length(characters)-1)
+        {
+          i=i+1;
+          new_string=new_string+characters[i];
+        }
+        if(find("font",new_string)==1 && (toint(strreplace(strreplace(new_string,"{font",""),"}",""))>0 || new_string=="{font0}"))
+        {
+          last_font=new_string;
+        }
+        else if((count(",",split(new_string,""))==2 && (toint(join(split(new_string,"")-(",","{","}"),""))>0  || join(split(new_string,"")-(",","{","}"),"")=="000")) || count(new_string,("{red}","{green}","{black}","{blue}","{yellow}","{white}","{brown}","{gold}","{gray}","{magenta}","{orange}","{cyan}")))
+        {
+          last_color=new_string;
+        }
+        else if(find("sz",new_string)==1 && toint(strreplace(strreplace(new_string,"{sz",""),"}",""))>0)
+        {
+          if(toint(strreplace(strreplace(new_string,"{sz",""),"}",""))>100)
+          {
+            Msg("{red}Maximum size allowed is 100. Excessive size"+strreplace(strreplace(new_string,"{sz",""),"}","")+" was set to 100.");
+            new_string="{sz100}";
+          }
+          last_size=new_string;
+        }
+        else if(new_string=="{left}" || new_string=="{right}" || new_string=="{center}")
+        {
+          last_align=new_string;
+        }
+        else if(new_string=="{reset}")
+        {
+          last_font="{font0}";
+          last_color="{red}";
+          last_size="{sz12}";
+          last_align="{center}";
+          new_string="";
+        }
+        else if(new_string=="{hr}")
+        {
+          Msg("{red}Please, refrain from using the {lb}hr{rb} tag. The tag has been removed.");
+          new_string="";
+        }
+        else
+          clean_string=clean_string+new_string;
+      }
+      if(text_width(0,12,new_word+new_string)>card_width)
+      {
+        composite_string=composite_string+(current_line,last_format+new_word);
+        new_word="";
+        last_format=last_align+last_size+last_color+last_font+"{shadow}";
+        current_line=last_format+new_string;
+      }
+      else if(characters[i]==" ")
+      {
+        if(text_width(0,12,current_line+new_word)<card_width)
+        {
+          current_line=current_line+new_word;
+          new_word="";
+          if(text_width(0,12,current_line+" ")<card_width)
+            current_line=current_line+" ";
+          if(i>=length(characters)-1)
+            composite_string=composite_string+(current_line,);
+        }
+        else
+        {
+          composite_string=composite_string+(current_line,);
+          last_format=last_align+last_size+last_color+last_font+"{shadow}";
+          current_line=last_format+new_word+" ";
+          new_word="";
+        }
+      }
+      else if(new_string=="\n")
+      {
+        if(text_width(0,12,current_line+new_word)<card_width)
+        {
+          current_line=current_line+new_word;
+          new_word="";
+          composite_string=composite_string+(current_line,);
+          last_format=last_align+last_size+last_color+last_font+"{shadow}";
+          current_line=last_format+new_word+" ";
+        }
+        else
+        {
+          composite_string=composite_string+(current_line,last_format+new_word);
+          new_word="";
+          last_format=last_align+last_size+last_color+last_font+"{shadow}";
+          current_line=last_format;
+        }
+      }
+      else if(i>=length(characters)-1)
+      {
+        if(text_width(0,12,current_line+new_word+new_string)<card_width)
+          current_line=current_line+new_word+new_string;
+        else
+        {
+          composite_string=composite_string+(current_line,);
+          last_format=last_align+last_size+last_color+last_font+"{shadow}";
+          current_line=last_format+new_word+new_string;
+        }
+        composite_string=composite_string+(current_line,);
+      }
+      else
+      {
+        new_word=new_word+new_string;
+      }
+      if(length(new_string)==1 && new_string!="\n")
+        clean_string=clean_string+new_string;
+    }
+    
+    return(composite_string+(clean_string,));
+    
+    i=pop();
+    last_format=pop();
+    last_align=pop();
+    last_size=pop();
+    last_color=pop();
+    last_font=pop();
+    composite_string=pop();
+    new_string=pop();
+    new_word=pop();
+    current_line=pop();
+    clean_string=pop();
+    characters=pop();
+    card_width=pop();
+  }
+}
+
+#
+# PlayCommandTx(text) - Writes the given text on the card under the mouse pointer.
+#
+
+def PlayCommandTx
+{
+  if(!length(ARG))
+    {
+      Msg("{red}Some text is required, see /help settext.");
+    }
+  else
+  {
+    if(object.number!=NULL)
+    {
+      if(object_type(object.number)=="cardinplay")
+      {
+        push(card_width);
+        push(str);
+        
+        str=join(ARG," ");
+        card_width=min(((object_data(object.number))[2],(object_data(object.number))[3],));
+        str=text_parser(str,card_width);
+        
+        Send("WriteText",(object.number,str));
+        
+        str=pop();
+        card_width=pop();
+      }
+      else
+      {
+        Msg("{red}You can only add text to cards in play.");
+      }
+    }
+    else
+    {
+      Msg("{red}You can only add text to cards in play.");
+    }
+  }
+}
+ 
+# KEYS
+# ====
+

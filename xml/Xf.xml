@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE ccg SYSTEM "gccg-game.dtd">
+<ccg name="The X-Files CCG" dir="Xf">
+  
+  <option name="hand card size" value="50"/>
+  <option name="table card size" value="40"/>
+  <option name="deck card size" value="20"/>
+  <option name="book card size" value="50"/>
+  
+  <cardset source="xfiles_basecards.xml"/>
+  <cardset source="promo.xml"/>
+  <cardset source="premiere.xml"/>
+  <cardset source="truth.xml"/>
+  <cardset source="101361.xml"/>
+  
+  <image file="rp.png" tag="{RP}"/>
+  <image file="cp.png" tag="{CP}"/>  
+  
+  <option name="deck order" value="type"/>
+  <option name="deck color by" value="type"/>
+
+  <option name="Agent text" value="{black}"/>
+  <option name="Adversary text" value="{green}"/>
+  <option name="Bluff text" value="{gray}"/>
+  <option name="Combat text" value="{red}"/>
+  <option name="Equipment text" value="{cyan}"/>	
+	<option name="Event text" value="{magenta}"/>	
+  <option name="Site text" value="{blue}"/>
+  <option name="Witness text" value="{138,43,226}"/>
+  <option name="X-File text" value="{yellow}"/>
+
+</ccg>

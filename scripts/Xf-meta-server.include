@@ -1,0 +1,19 @@
+if(!port)
+  port=29190;
+factory.port=29191;
+
+PRIZE_PER_PLAYER=1.0;
+INITIAL_MONEY=50.0;
+AMOUNT_TO_PAY_WEEKLY=0.0;
+
+if(!load("products"))
+{
+  products=(,);
+  products{"Promo single card"}=(65536,69.99,("PRO","single"),65536);
+  products{"Premiere Edition starter"}=(65536,15.99,("PRE","starter"),65536);
+  products{"Premiere Edition booster"}=(65536,3.99,("PRE","booster"),65536);
+  products{"The Truth Is Out There starter"}=(65536,12.99,("TRU","starter"),65536);
+  products{"The Truth Is Out There booster"}=(65536,2.99,("TRU","booster"),65536);
+  products{"101361 booster"}=(65536,2.99,("101","booster"),65536);
+  save("products");
+}

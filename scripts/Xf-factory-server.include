@@ -1,0 +1,47 @@
+if(!port)
+  port=29191;
+
+def InitDistributions
+{
+  distribution=(,);
+  distribution{"PRO"}=(,);
+  distribution{"PRO"}{"single"}=((1,"P"));
+  distribution{"PRE"}=(,);
+  distribution{"PRE"}{"starter"}=((20,"F"),(25,"C"),(12,"U"),(3,"R"));
+  distribution{"PRE"}{"booster"}=((4,"C"),(2,"U"),(1,"R"));
+  distribution{"PRE-V"}=(,);
+  distribution{"PRE-V"}{"booster"}=((4,"C"),(2,"U"),(1,"V"));
+  distribution{"TRU"}=(,);
+  distribution{"TRU"}{"starter"}=((25,"F"),(20,"C"),(12,"U"),(3,"R"));
+  distribution{"TRU"}{"booster"}=((4,"C"),(2,"U"),(1,"R"));
+  distribution{"TRU-V"}=(,);
+  distribution{"TRU-V"}{"booster"}=((4,"C"),(2,"U"),(1,"V"));
+  distribution{"101"}=(,);
+  distribution{"101"}{"booster"}=((4,"C"),(2,"U"),(1,"R"));
+  distribution{"101-V"}=(,);
+  distribution{"101-V"}{"booster"}=((4,"C"),(2,"U"),(1,"V"));
+}
+
+def ProducePRE_Booster
+{
+  if(random(100) < 20)
+    return(RandomCardSet("PRE",distribution{"PRE-V"}{"booster"}));
+  else
+    return(RandomCardSet("PRE",distribution{"PRE"}{"booster"}));
+}
+
+def ProduceTRU_Booster
+{
+  if(random(100) < 20)
+    return(RandomCardSet("TRU",distribution{"TRU-V"}{"booster"}));
+  else
+    return(RandomCardSet("TRU",distribution{"TRU"}{"booster"}));
+}
+
+def Produce101_Booster
+{
+  if(random(100) < 20)
+    return(RandomCardSet("101",distribution{"101-V"}{"booster"}));
+  else
+    return(RandomCardSet("101",distribution{"101"}{"booster"}));
+}

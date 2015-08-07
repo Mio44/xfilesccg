@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE ccg-setinfo SYSTEM "../gccg-set.dtd">
+<ccg-setinfo name="101361" game="The X-Files CCG" dir="101361" abbrev="101">
+    <cards>
+        <card name="2SHY" text="This card may be played in its normal way or on any Team that includes at least one female Agent, ignoring Activator requirements." graphics="2shy.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Evolutionary, Creature"/>
+            <attr key="id" value="XF97-0385x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="2Shy"/>
+            <attr key="activators" value="Conspiracy, Computer"/>
+            <attr key="closeRangeCombat" value="4"/>
+            <attr key="longRangeCombat" value="0"/>
+            <attr key="health" value="4"/>
+        </card>
+        <card name="DARIN PETER OSWALD" text="All Agents in a Team attacked by this Adversary must discard all attached Keyword ELECTRICAL Equipment immediately. The LONG RANGE COMBAT attack of this Adversary may be split between two opponents."
+            graphics="darin-peter-oswald.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="8 CP"/>
+            <attr key="costnumber" value="8"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Evolutionary, Creature"/>
+            <attr key="id" value="XF97-0386x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="D.P.O."/>
+            <attr key="activators" value="Conspiracy, Sciences"/>
+            <attr key="closeRangeCombat" value="3"/>
+            <attr key="longRangeCombat" value="8"/>
+            <attr key="health" value="5"/>
+        </card>
+        <card name="JOHN MOSTOW" text="This Card is free if played on a Keyword INSANITY card and Activator requirements are ignored." graphics="john-mostow.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Primordial, Creature, Pawn"/>
+            <attr key="id" value="XF97-0387x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Groteque"/>
+            <attr key="activators" value="Conspiracy, Motive, Site"/>
+            <attr key="closeRangeCombat" value="4"/>
+            <attr key="longRangeCombat" value="0"/>
+            <attr key="health" value="4"/>
+        </card>
+        <card name="MARGI KLEINJAN"
+            text="This card may be played on a Site at which the &quot;Terri Roberts&quot; Adversary card has been played, ignoring Activator requiremens. When this occurs, both Adversaries attack simultaneously (treat as one combat) and double both cards' LRC, CRC, and HEALTH. Triple both cards' LRC, CRC and HEALTH if the Agents are using OCCULT INVESTIGATION skill."
+            graphics="margi-kleinjan.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="3 CP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Occult, Creature"/>
+            <attr key="id" value="XF97-0388x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Syzygy"/>
+            <attr key="activators" value="Conspiracy, Affiliation, Site"/>
+            <attr key="closeRangeCombat" value="2"/>
+            <attr key="longRangeCombat" value="2"/>
+            <attr key="health" value="2"/>
+        </card>
+        <card name="PUPPET"
+            text="Puppet may wait until his opponents declare they have played all of the COMBAT cards that they intend to, then Puppet may play COMBAT cards. No other COMBAT cards may be played after Puppet's. This card is free and Activator requirements are ignored if it is played on a Keyword INSANITY card."
+            graphics="puppet.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="5 CP"/>
+            <attr key="costnumber" value="5"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Occult, Creature"/>
+            <attr key="id" value="XF97-0389x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Clyde Bruckman's Final Repose"/>
+            <attr key="activators" value="Conspiracy, Motive, Site"/>
+            <attr key="closeRangeCombat" value="4"/>
+            <attr key="longRangeCombat" value="0"/>
+            <attr key="health" value="4"/>
+        </card>
+        <card name="RED-HAIRED MAN" text="This Adversary is able to use SUBTERFUGE and MARTIAL ARTS cads. If you opponent has correctly guessed two of your X-File's characteristics, the cost to play this card is 3 ." graphics="red-haired-man.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="6 CP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Government, Creature, Master"/>
+            <attr key="id" value="XF97-0390x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="731"/>
+            <attr key="activators" value="Conspiracy, Affiliation, Site"/>
+            <attr key="closeRangeCombat" value="5"/>
+            <attr key="longRangeCombat" value="3"/>
+            <attr key="health" value="5"/>
+        </card>
+        <card name="SIMON GATES A.K.A. FERREAU" text="" graphics="simon-gates-a-k-a-ferreau.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="6 CP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Occult, Creature"/>
+            <attr key="id" value="XF97-0391x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Revelations"/>
+            <attr key="activators" value="Conspiracy, Agent, Believer"/>
+            <attr key="closeRangeCombat" value="10"/>
+            <attr key="longRangeCombat" value="0"/>
+            <attr key="health" value="7"/>
+        </card>
+        <card name="TERRI ROBERTS"
+            text="This card may be played on a Site at which the &quot;Margi Kleinjan&quot; Adversary card has been played, ignoring Activator requiremens. When this occurs, both Adversaries attack simultaneously (treat as one combat) and double both cards' LRC, CRC, and HEALTH. Triple both cards' LRC, CRC and HEALTH if the Agents are using OCCULT INVESTIGATION skill."
+            graphics="terri-roberts.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="3 CP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Occult, Creature"/>
+            <attr key="id" value="XF97-0392x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Syzygy"/>
+            <attr key="activators" value="Conspiracy, Result, Site"/>
+            <attr key="closeRangeCombat" value="2"/>
+            <attr key="longRangeCombat" value="2"/>
+            <attr key="health" value="2"/>
+        </card>
+        <card name="THE LIST"
+            text="List one Agent from the Investigating Team on a piece of paper. Place this card in your opponent's Field with the paper underneath. If the Agent listed Investigates a different Site before this card is negated, reveal the paper with the listed Agent. The Agent must go to the Hospital with zero HEALTH and may not contribute to skill checks this turn. Discard this card."
+            graphics="the-list.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Occult, Phenomena, Resource"/>
+            <attr key="id" value="XF97-0393x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="The List"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+            <attr key="closeRangeCombat" value="N/A"/>
+            <attr key="longRangeCombat" value="N/A"/>
+            <attr key="health" value="N/A"/>
+        </card>
+        <card name="THE WALK" text="Subtract one from all damage sources applied to this Adversary." graphics="the-walk.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="5 CP"/>
+            <attr key="costnumber" value="5"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Evolutionary, Phenomena"/>
+            <attr key="id" value="XF97-0394x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="The Walk"/>
+            <attr key="activators" value="Conspiracy, Affiliation, Site"/>
+            <attr key="closeRangeCombat" value="4"/>
+            <attr key="longRangeCombat" value="0"/>
+            <attr key="health" value="4"/>
+        </card>
+        <card name="JOSEPH PATNIK" text="Subtract one from all damage sources applied to this Adversary. The Long Range Combat Round is skipped." graphics="joseph-patnik.jpg">
+            <attr key="type" value="Adversary"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Adversary, Government, Phenomena"/>
+            <attr key="id" value="XF97-0395x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Wetwired"/>
+            <attr key="activators" value="Conspiracy, Result, Site"/>
+            <attr key="closeRangeCombat" value="4"/>
+            <attr key="longRangeCombat" value="0"/>
+            <attr key="health" value="4"/>
+        </card>
+        <card name="AGENT BILL PATTERSON"
+            text="Once per game, Agent Patterson may attack any Team investigating a Site as if he were an Adversary with the appropriate Activators. If a card is played that Negates him he is placed back into his controller's Field. If he is reduced to zero HEALTH, he is removed from the game."
+            graphics="agent-bill-patterson.jpg">
+            <attr key="type" value="Agent"/>
+            <attr key="cost" value="6 RP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Agent, FBI, Law, Neutral, Believer"/>
+            <attr key="id" value="XF97-0396x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Grotesque"/>
+            <attr key="behavioral" value="3"/>
+            <attr key="criminalInvestigation" value="3"/>
+            <attr key="evidenceCollection" value="3"/>
+            <attr key="observation" value="2"/>
+            <attr key="occultInvestigation" value="1"/>
+            <attr key="subterfuge" value="1"/>
+            <attr key="res" value="2"/>
+            <attr key="closeRangeCombat" value="3"/>
+            <attr key="longRangeCombat" value="2"/>
+            <attr key="health" value="5"/>
+        </card>
+        <card name="AGENT DANNY PENDRELL" text="Place three tokens on Agent Pendrell. During a skill check, discard one token to add 1 to Agent Pendrell's COMPUTER, SCIENCES, or MEDICAL skill." graphics="agent-danny-pendrell.jpg">
+            <attr key="type" value="Agent"/>
+            <attr key="cost" value="6 RP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Agent, FBI, Law, Believer"/>
+            <attr key="id" value="XF97-0397x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="731"/>
+            <attr key="computer" value="3"/>
+            <attr key="criminalInvestigation" value="2"/>
+            <attr key="evidenceCollection" value="3"/>
+            <attr key="medical" value="1"/>
+            <attr key="observation" value="2"/>
+            <attr key="sciences" value="3"/>
+            <attr key="res" value="1"/>
+            <attr key="closeRangeCombat" value="2"/>
+            <attr key="longRangeCombat" value="2"/>
+            <attr key="health" value="4"/>
+        </card>
+        <card name="AGENT FRED NEMHAUSER" text="Agent Nemhauser's BEHAVIORAL and CRIMINAL INVESTIGATION skills are increased by one if he and Agent Patterson are on the same Team." graphics="agent-fred-nemhauser.jpg">
+            <attr key="type" value="Agent"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Agent, FBI, Law"/>
+            <attr key="id" value="XF97-0398x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Grotesque"/>
+            <attr key="behavioral" value="1"/>
+            <attr key="criminalInvestigation" value="1"/>
+            <attr key="evidenceCollection" value="1"/>
+            <attr key="res" value="1"/>
+            <attr key="closeRangeCombat" value="1"/>
+            <attr key="longRangeCombat" value="2"/>
+            <attr key="health" value="4"/>
+        </card>
+        <card name="AGENT KRESKI" text="Place one token on this card. Remove one token to negate a Keyword HEALING card played by your opponent." graphics="agent-kreski.jpg">
+            <attr key="type" value="Agent"/>
+            <attr key="cost" value="1 RP"/>
+            <attr key="costnumber" value="1"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Agent, FBI, Law"/>
+            <attr key="id" value="XF97-0399x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Oubliette"/>
+            <attr key="criminalInvestigation" value="1"/>
+            <attr key="res" value="0"/>
+            <attr key="closeRangeCombat" value="2"/>
+            <attr key="longRangeCombat" value="2"/>
+            <attr key="health" value="4"/>
+        </card>
+        <card name="CLYDE BRUCKMAN" text="Place one token on this card. Remove one token to examine an opponent's hand and remove one of the cards in his hand from the game." graphics="clyde-bruckman.jpg">
+            <attr key="type" value="Agent"/>
+            <attr key="cost" value="5 RP"/>
+            <attr key="costnumber" value="5"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Agent, Independent, Believer"/>
+            <attr key="id" value="XF97-0400x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Clyde Bruckman's Final Repose"/>
+            <attr key="criminalInvestigation" value="2"/>
+            <attr key="evidenceCollection" value="4"/>
+            <attr key="observation" value="3"/>
+            <attr key="occultInvestigation" value="3"/>
+            <attr key="res" value="1"/>
+            <attr key="closeRangeCombat" value="1"/>
+            <attr key="longRangeCombat" value="1"/>
+            <attr key="health" value="3"/>
+        </card>
+        <card name="DETECTIVE ANGELA WHITE" text="If Detective White is in the same Team as Agent Mulder, they both gain a +1 to their cumulative OCCULT INVESTIGATION and CRIMINAL INVESTIGATION skills, and a -1 to their OBSERVATION and BEHAVIORAL skills."
+            graphics="detective-angela-white.jpg">
+            <attr key="type" value="Agent"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Agent, Law, Independent, Believer"/>
+            <attr key="id" value="XF97-0401x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Syzygy"/>
+            <attr key="behavioral" value="1"/>
+            <attr key="criminalInvestigation" value="1"/>
+            <attr key="evidenceCollection" value="2"/>
+            <attr key="observation" value="1"/>
+            <attr key="occultInvestigation" value="2"/>
+            <attr key="res" value="1"/>
+            <attr key="closeRangeCombat" value="1"/>
+            <attr key="longRangeCombat" value="1"/>
+            <attr key="health" value="4"/>
+        </card>
+        <card name="DETECTIVE MANNERS" text="Place two tokens on Detective Manners. Discarrd one token to search through your Bureau deck and add a Witness to your opponent and shuffle the deck." graphics="detective-manners.jpg">
+            <attr key="type" value="Agent"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Agent, Law, Independent"/>
+            <attr key="id" value="XF97-0402x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Jose Chung's &quot;From Outer Space&quot;"/>
+            <attr key="criminalInvestigation" value="1"/>
+            <attr key="evidenceCollection" value="1"/>
+            <attr key="observation" value="2"/>
+            <attr key="res" value="0"/>
+            <attr key="closeRangeCombat" value="1"/>
+            <attr key="longRangeCombat" value="1"/>
+            <attr key="health" value="3"/>
+        </card>
+        <card name="ANGRY TOWNSPEOPLE" text="Play this card to increase the cost of all RP cards played at this site by 1." graphics="angry-townspeople.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="2 CP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0403x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Syzygy"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="BIG BLUE" text="Play this card to add X to your pool. X = the number of spent at this Site by the Investigating Player." graphics="big-blue.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="3 CP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0404x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Quagmire"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="PHILOSOPHICAL QUESTION" text="Play this card to increase the Cost of all cards played at this Site by 2." graphics="philosophical-question.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0405x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Quagmire"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="CERULEAN BLUE" text="Play this card to force your opponent to discard four cards from the top of his Bureau Deck." graphics="cerulean-blue.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0406x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Pusher"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="DARKENED FOREST" text="Pay the listed cost where X = the number of paid to gain the desired modifier to one of the following skills: CLOSE RANGE COMBAT, LONG RANGE COMBAT. (1) = -1, (3) = -2, (5) = -3, (9) = -4."
+            graphics="darkened-forest.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="X CP"/>
+            <attr key="costnumber" value="X"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0407x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Quagmire"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="DISSOLVING EVIDENCE" text="Play this card to force your opponent to discad the top card of his Bureau Deck." graphics="dissolving-evidence.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="1 CP"/>
+            <attr key="costnumber" value="1"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0408x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="2Shy"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="DECEIVING THE FLOCK" text="Force an opponent to discard one card from their hand at random." graphics="deceiving-the-flock.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="1 CP"/>
+            <attr key="costnumber" value="1"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0409x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Revelations"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="FESTIVAL OF THE HUNGRY GHOSTS" text="Once this card is played, the Investigating Player may not play any Events while investigating this Site except for Events which would specifically negate this card."
+            graphics="festival-of-the-hungry-ghosts.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0410x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Hell Money"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="FLESH SCULPTING" text="Play this card to double the cost of any Keyword ACTIVE card played at this Site." graphics="flesh-sculpting.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0411x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Grotesque"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="VERACITY IN QUESTION" text="Once this card is played, the investigating player may not play any COMBAT cards while investigating this Site, except for COMBAT cards which would specifically negate this card."
+            graphics="veracity-in-question.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="2 CP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0412x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Talitha Cumi"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="HEADS UP" text="Play this card to force your opponent to discard two cards from the top of his Bureau Deck." graphics="heads-up.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="2 CP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0413x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="The List"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="MASS GRAVE" text="Play this card to immediately add one to your pool for every two the Investigating Team uses at this Site." graphics="mass-grave.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="1 CP"/>
+            <attr key="costnumber" value="1"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0414x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="731"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="FINAL REPOSE" text="Play this card to choose any three cards from you opponents' discard pile and place them in any order on top of his Bureau Deck." graphics="final-repose.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="2 CP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0415x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Clyde Bruckman's Final Repose"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="NO ONE BELIEVES YOU" text="Play this card to add one to the Site Prerequisite number for each Agent beyond one in the investigating Team." graphics="no-one-believes-you.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0416x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Oubliette"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="OUBLIETTE"
+            text="Play this card on one Agent in the Investigating Team. Remove the Agent from play and place this card on top of the Agent with four tokens. Remove one token during each of the controlling player's Debriefing Phases. When all tokens are removed, place this card on the owning player's Discard pile and move the Agent to the Bureau immediately."
+            graphics="oubliette.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="8 CP"/>
+            <attr key="costnumber" value="8"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0417x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Oubliette"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="STONER, CHICK, AND DUDE" text="Move up to two Bluffs to a different Site in play. Play this card before any other Bluffs are revealed." graphics="stoner-chick-and-dude.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="1 CP"/>
+            <attr key="costnumber" value="1"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0418x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="THE MAILMAN" text="Play this card to allow you to move one game effect token from any one card to another immediately. This may not take a card above the normal number of tokens allowed." graphics="the-mailman.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0419x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="The Walk"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="THIS IS NOT HAPPENING" text="Force an opponent to discard three cards from his hand at random." graphics="this-is-not-happening.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0420x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Jose Chung's &quot;From Outer Space&quot;"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="VISIONS OF A MADMAN" text="Play this card to allow you to look at your opponent's Hand." graphics="visions-of-a-madman.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="3 CP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0421x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Clyde Bruckman's Final Repose"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="YOU'RE A DEAD MAN" text="Once this card is played, the investigating player may not play any Witnesses while investigating this Site, except for Witnesses which would specifically negate this card." graphics="youre-a-dead-man.jpg">
+            <attr key="type" value="Bluff"/>
+            <attr key="cost" value="3 CP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Bluff"/>
+            <attr key="id" value="XF97-0422x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Jose Chung's &quot;From Outer Space&quot;"/>
+            <attr key="activators" value="Conspiracy, Site"/>
+        </card>
+        <card name="TWO LUX VIDEO CAMERA" text="Adds two to the Team's SUBTERFUGE skill. This modifier applies even if the Agent to whom this equipment is attached is sent to the Hospital." graphics="two-lux-video-camera.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="5 RP"/>
+            <attr key="costnumber" value="5"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Electrical"/>
+            <attr key="id" value="XF97-0423x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Pusher"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="ALIEN AUTOPSY VIDEO" text="Discard this card to add three to the Agent's ALIEN INVESTIGATION skill." graphics="alien-autopsy-video.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Government, Electrical"/>
+            <attr key="id" value="XF97-0424x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Nisei"/>
+            <attr key="activators" value="Field"/>
+        </card>
+        <card name="AMBULANCE" text="Discard this card to add three to the Agent's MEDICAL skill." graphics="ambulance.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Mechanical, Standard"/>
+            <attr key="id" value="XF97-0425x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Apocrypha"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="M.R.I." text="Discard this card to add three to the Agent's BEHAVIORAL skill." graphics="m-r-i.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Electrical"/>
+            <attr key="id" value="XF97-0426x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Pusher"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="CLASSIFIED PHOTOS" text="Discard this card to add three to the Agent's CRIMINAL INVESTIGATION skill." graphics="classified-photos.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Government, Special"/>
+            <attr key="id" value="XF97-0427x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Paper Clip"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="DENTAL X-RAY PLATE" text="Discard this card to add three to the Agent's OCCULT INVESTIGATION skill." graphics="dental-x-ray-plate.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Special"/>
+            <attr key="id" value="XF97-0428x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="The Walk"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="DESKTOP COMPUTER" text="Discard this card to add three to the Agent's COMPUTER skill." graphics="desktop-computer.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Electrical"/>
+            <attr key="id" value="XF97-0429x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="DRIED FROG" text="Adds one to the Agent's HEALTH." graphics="dried-frog.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Occult, Healing"/>
+            <attr key="id" value="XF97-0430x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Hell Money"/>
+            <attr key="activators" value="Field, Believer"/>
+        </card>
+        <card name="DECOMPOSING VICTIM" text="Discard this card to add three to the Agent's SCIENCES skill." graphics="decomposing-victim.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Standard"/>
+            <attr key="id" value="XF97-0431x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Quagmire"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="GARROTE" text="Discard this card to add three to the Agent's CLOSE RANGE COMBAT skill." graphics="garrote.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Electrical"/>
+            <attr key="id" value="XF97-0432x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="731"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="HELICOPTER SPOTTER" text="Discard this card to add three to the Agent's OBSERVATION skill." graphics="helicopter-spotter.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Mechanical, Standard"/>
+            <attr key="id" value="XF97-0433x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="The Blessing Way"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="LASER TARGETER" text="Discard this card to add three to the Agent's LONG RANGE COMBAT skill." graphics="laser-targeter.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Government, Electrical"/>
+            <attr key="id" value="XF97-0434x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="731"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="MURDER WEAPON" text="Discard this card to add three to the Agent's EVIDENCE COLLECTION skill." graphics="murder-weapon.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Standard"/>
+            <attr key="id" value="XF97-0435x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Grotesque"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="STATIONERY" text="Discard this card to add three to the Agent's INVESTIGATION skill." graphics="stationery.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Standard"/>
+            <attr key="id" value="XF97-0436x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Piper Maru"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="QUEEQUEG" text="Discard Queequeg to negate any one PRIMORDIAL or EVOLUTIONARY Adversary. Each player may only have one of this card in their decks." graphics="queequeg.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Special"/>
+            <attr key="id" value="XF97-0437x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Quagmire"/>
+            <attr key="activators" value="Field"/>
+        </card>
+        <card name="SATELLITE PHOTOS" text="Adds two to the Agent's ALIEN INVESTIGATION skill." graphics="satellite-photos.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Government"/>
+            <attr key="id" value="XF97-0438x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Nisei"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="SECRET GOVERNMENT FILES" text="Discard this card to add three to the Agent's BUREAUCRACY skill." graphics="secret-government-files.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Government, Special"/>
+            <attr key="id" value="XF97-0439x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Quagmire"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="SECRET PASSAGE" text="Discard this card to add three to the Agent's SUBTERFUGE skill." graphics="secret-passage.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Special"/>
+            <attr key="id" value="XF97-0440x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Teso dos Bichos"/>
+            <attr key="activators" value="Field"/>
+        </card>
+        <card name="ALIEN STILETTO"
+            text="Attach this Equipment to any Agent in the Field. Any ALIEN Adversary damaged by this weapon in CLOSE RANGE COMBAT is discarded prior to dealing damage in the Combat Round. The Alien Stiletto may be voluntarily discarded in the controlling player's Briefing Phase. Add 10 to your RP Pool and remove the Alien Stiletto from the game."
+            graphics="alien-stiletto.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="5 RP"/>
+            <attr key="costnumber" value="5"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Alien, Artifact, Equipment"/>
+            <attr key="id" value="XF97-0441x1"/>
+            <attr key="rarity" value="V"/>
+            <attr key="episode" value="Talitha Cumi"/>
+            <attr key="activators" value="Field"/>
+        </card>
+        <card name="TAPE RECORDER" text="Adds two to the Agent's OCCULT INVESTIGATION skill." graphics="tape-recorder.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Electrical"/>
+            <attr key="id" value="XF97-0442x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="The Walk"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="CLASSIFIED AD" text="Adds two to the Agent's BEHAVIORAL skill." graphics="classified-ad.jpg">
+            <attr key="type" value="Equipment"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Equipment, Standard"/>
+            <attr key="id" value="XF97-0443x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Pusher"/>
+            <attr key="activators" value="Bureau"/>
+        </card>
+        <card name="FOO FIGHTER" text="While in play, you may take a second Conspiracy discard after your first (in the Briefing Phase). Discard when an opponent successfully investigates a site (directed at you) using ALIEN INVESTIGATION Skill."
+            graphics="foo-fighter.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="6 CP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Artifact, Event, Resource"/>
+            <attr key="id" value="XF97-0444x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Apocrypha"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="AMARU URN"
+            text="Place in an opponent's Field. An OCCULT Adversary may now be played as a Bluff (it is treated as a Bluff for all purposes). When revealed the Adversary may ignore Site Activator restrictions. Discard when a Keyword OCCULT INVESTIGATION Site is directed at you and investigated successfully."
+            graphics="amaru-urn.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="3 CP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Occult, Artifact, Event"/>
+            <attr key="id" value="XF97-0445x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Teso dos Bichos"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="AVATAR" text="Play this card when Assistant Director Skinner would be forced to go to the Hospital. Skinner may stay where he is with full HEALTH. Any unwanted game effect tokens are removed." graphics="avatar.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Phenomena"/>
+            <attr key="id" value="XF97-0446x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Avatar"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="CAPTIVE HYBRID" text="Place this card in one of your opponents Fields. Your opponent must subtract 2 from the he generates each turn while this card is in his Field. Your opponent may pay 7 to force you to discard this card."
+            graphics="captive-hybrid.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="6 CP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Government, Artifact, Event, Resource"/>
+            <attr key="id" value="XF97-0447x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="731"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="CIRCUIT BOARD IMPLANT"
+            text="Attach this card to any Agent. As long as this card is in play, the controller of the attached Agent must play will all of the cost cards in his hand face up on the table. Place four counters on this card when it comes into play. Remove one counter each of the attached Agents' Briefing Phases. Wehn the last counter is removed, discard this card."
+            graphics="circuit-board-implant.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="6 CP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Government, Artifact, Equipment"/>
+            <attr key="id" value="XF97-0448x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Nisei"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="DISBELIEF" text="Play this card on any Agent with the keyword SKEPTIC to prevent that Agent from contributing their skills at any keyword OCCULT INVESTIGATION or ALIEN INVESTIGATION Site." graphics="disbelief.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="1 CP"/>
+            <attr key="costnumber" value="1"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="XF97-0449x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="activators" value="Conspiracy, Agent, Skeptic"/>
+        </card>
+        <card name="ELIMINATING THE SOURCE"
+            text="Place in an Opponent's Field with two tokens on the card. Remove a token in this opponent's Debriefing Phase. While in play, opponent may only investigate Keyword CRIMINAL INVESTIGATION or EVIDENCE COLLECTION Sites. Discard this card when the last token is removed."
+            graphics="eliminating-the-source.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Event, Resource"/>
+            <attr key="id" value="XF97-0450x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Wetwired"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="A NEAR DEATH EXPERIENCE"
+            text="Play when Agent Fox Mulder is in combat. Assign all damage to Mulder first. After the combat, move Mulder to the Hospital with HEALTH zero. When Mulder leaves that Hospital, permenantly add the following: +1 OCCULT INVESTIGATION, +1 ALIEN INVESTIGATION, +1 SCIENCES, +1 LONG RANGE COMBAT. Once per game you may ask an X-Files' identity without incurring a penalty question. Only one of this card may be in play."
+            graphics="a-near-death-experience.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Occult, Resource"/>
+            <attr key="id" value="XF97-451x1"/>
+            <attr key="rarity" value="V"/>
+            <attr key="episode" value="The Blessing Way"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="HELL MONEY" text="Negate any Keyword PHENOMENA card." graphics="hell-money.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 *P"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="*P"/>
+            <attr key="keywords" value="Event, Negate"/>
+            <attr key="id" value="XF97-0452x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Hell Money"/>
+            <attr key="activators" value="Active/Conspiracy"/>
+        </card>
+        <card name="JOSE CHUNG'S &quot;FROM OUTER SPACE&quot;"
+            text="Place in an Opponent's Field. Every turn, name one X-File Characteristic (AFFILIATION, METHOD, MOTIVE, or RESULT) during this opponent's Briefing Phase. This Opponent may not ask you this Characteristic question this turn. You may not choose the same characteristic in two consecutive turns. Cards that cause bluffs to be discarded affect this card."
+            graphics="jose-chung-s-from-outer-space.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Government, Artifact, Event, Resource, Bluff"/>
+            <attr key="id" value="XF97-0453x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Jose Chung's &quot;From Outer Space&quot;"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="KRYCEK POSSESSED"
+            text="Play on Agent Krycek when his team fails to successfully investigate a Keyword ALIEN INVESTIGATION Site (discard the Site). Place two tokens on this card. Remove a token to emit a blast of energy that causes 6 points of damage to all opponents during the Long Range Combat Round. Apply the following permanent modifiers: +1 ALIEN INVESTIGATION, +2 SUBTERFUGE, and +1 HEALTH."
+            graphics="krycek-possessed.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Resource"/>
+            <attr key="id" value="XF97-0454x1"/>
+            <attr key="rarity" value="V"/>
+            <attr key="episode" value="Piper Maru"/>
+            <attr key="activators" value="Active, Alien Investigation, Site"/>
+        </card>
+        <card name="MOSTOW'S SKETCHES"
+            text="Attach this card to an Agent in the Field. The Agent may attack any Team investigating a Site during his opponent's Investigation Phase. If the Agent is Negated, discard this card. If the Agent is reduced to zero HEALTH, remove the Agent from the game."
+            graphics="mostow-s-sketches.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Occult, Artifact, Equipment"/>
+            <attr key="id" value="XF97-0455x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Grotesque"/>
+            <attr key="activators" value="Conspiracy, Field"/>
+        </card>
+        <card name="CEREMONY"
+            text="Play this card in the Field and place 2 tokens on it. Any BELIEVER Agent forced to go to the Hospital may be placed under this card instead. During the Healing phase, the owning player may remove a token to heal all damage done to the Agent."
+            graphics="ceremony.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="5 CP"/>
+            <attr key="costnumber" value="5"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Occult, Artifact, Event, Resource, Healing, Believer"/>
+            <attr key="id" value="XF97-0456x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="The Blessing Way"/>
+            <attr key="activators" value="Active, Believer, Agent"/>
+        </card>
+        <card name="SKINNER INTERVENES" text="Play this card when an opponent has played an Adversary card. Immediately move all Agents in that team to your Bureau section and your opponent must discard the Adversary card."
+            graphics="skinner-intervenes.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Move"/>
+            <attr key="id" value="XF97-0457x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="The Blessing Way"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="SKINNER'S WEDDING RING" text="Play this card to search through your Bureau Deck and put into play any Keyword ACTIVE card that specifically efects Skinner at zero Cost." graphics="skinner-s-wedding-ring.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Phenomena"/>
+            <attr key="id" value="XF97-0458x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Avatar"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="MEN IN BLACK"
+            text="Play this card in the Field during your opponents' Case Assignment Phase. You may place Bluff cards under this card face down at any time. No more than three cards may be under this card at any one time. During his Case Assignment Phase you may play cards stored under this card on any Site in the Field for 2 CP less."
+            graphics="men-in-black.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="6 CP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Event, Resource"/>
+            <attr key="id" value="XF97-0459x1"/>
+            <attr key="rarity" value="V"/>
+            <attr key="episode" value="Jose Chung's &quot;From Outer Space&quot;"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="THE VIDEO TRAP" text="Place this card next to your X-File. You may draw one card for free in each of your opponents' Briefing Phases." graphics="the-video-trap.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Government, Artifact, Event, Resource"/>
+            <attr key="id" value="XF97-0460x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Wetwired"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="TONG LOTTERY JAR"
+            text="Place this card next to your X-File. Place up to three cards with a set CP cost from your hand under this card. These three cards can be used to negate any RP card with identical cost except Agents and Sites. This function requires zero CP cost. Discard both the played card and the card used to negate it. Discard this card when all cards underneath have been played."
+            graphics="tong-lottery-jar.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="6 CP"/>
+            <attr key="costnumber" value="6"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Artifact, Event, Resource"/>
+            <attr key="id" value="XF97-0461x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Hell Money"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="VISIT FROM THE FIRST ELDER" text="Show your opponent this card to retrieve all Conspiracy cards from your Discard Pile and shuffle them back into your Bureau Deck. Discard this card." graphics="visit-from-the-first-elder.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 CP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="XF97-0462x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="731"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="WAR OF THE COPROPHAGES" text="Play this card to cause your opponent to discard all Witness cards in his hand." graphics="war-of-the-coprophages.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="3 CP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="CP"/>
+            <attr key="keywords" value="Event, Phenomena"/>
+            <attr key="id" value="XF97-0463x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="activators" value="Conspiracy"/>
+        </card>
+        <card name="WHITE BUFFALO" text="You may remove one game effect token or wound token from any cards under your control." graphics="white-buffalo.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Phenomena, Healing"/>
+            <attr key="id" value="XF97-0464x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Paper Clip"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="UNEXPECTED CALL" text="Play this card to allow you to exchange RP Pools with your opponent." graphics="unexpected-call.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="0 RP"/>
+            <attr key="costnumber" value="0"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event"/>
+            <attr key="id" value="XF97-0465x1"/>
+            <attr key="rarity" value="V"/>
+            <attr key="episode" value="Apocrypha"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="WORK A DEAL"
+            text="Played by itself, this card will negate one GOVERNMENT Adversary, discard both. If played on an Agent with the &quot;Taped Intelligence&quot; Equipment card attached, remove the &quot;Taped Intelligence&quot; card from the game and place this card in your Bureau section. As long as this card is in play, no GOVERNMENT Adversaries may be played on your Agents."
+            graphics="work-a-deal.jpg">
+            <attr key="type" value="Event"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Event, Resource"/>
+            <attr key="id" value="XF97-0466x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Paper Clip"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="MOSTOW'S STUDIO, WASHINGTON, D.C." text="Prerequisite: BEHAVIORAL 4+; Question: You may ask one METHOD question." graphics="mostow-s-studio-washington-d-c.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Mono, Method, Behavioral"/>
+            <attr key="id" value="XF97-0467x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Grotesque"/>
+            <attr key="prerequisite" value="BEHAVIORAL 4+"/>
+            <attr key="question" value="You may ask one METHOD question."/>
+        </card>
+        <card name="BRADDOCK HEIGHTS, MARYLAND" text="Prerequisite: BUREAUCRACY 4+; Question: You may ask one MOTIVE question." graphics="braddock-heights-maryland.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Mono, Motive, Bureaucracy"/>
+            <attr key="id" value="XF97-0468x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Wetwired"/>
+            <attr key="prerequisite" value="BUREAUCRACY 4+"/>
+            <attr key="question" value="You may ask one MOTIVE question."/>
+        </card>
+        <card name="CHINATOWN, SAN FRANCISCO, CA" text="Prerequisite: MEDICAL 4+; Question: You may ask one RESULT question." graphics="chinatown-san-francisco-ca.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Mono, Result, Medical"/>
+            <attr key="id" value="XF97-0469x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Hell Money"/>
+            <attr key="prerequisite" value="MEDICAL 4+"/>
+            <attr key="question" value="You may ask one RESULT question."/>
+        </card>
+        <card name="JERUSALEM, OHIO" text="Prerequisite: OCCULT INVESTIGATION 4+; Question: You may ask one METHOD question." graphics="jerusalem-ohio.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Mono, Method, Occult Investigation"/>
+            <attr key="id" value="XF97-0470x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Revelations"/>
+            <attr key="prerequisite" value="OCCULT INVESTIGATION 4+"/>
+            <attr key="question" value="You may ask one METHOD question."/>
+        </card>
+        <card name="MILLER'S GROVE, MASSACHUSETTS" text="Prerequisite: ALIEN INVESTIGATION 4+; Question: You may ask one RESULT question." graphics="miller-s-grove-massachusetts.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Mono, Result, Alien Investigation"/>
+            <attr key="id" value="XF97-0471x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="prerequisite" value="ALIEN INVESTIGATION 4+"/>
+            <attr key="question" value="You may ask one RESULT question."/>
+        </card>
+        <card name="POSITRON EMISSION TOMOGRAPHY LAB, ALLENTOWN, PENNSYLVANIA" text="Prerequisite: COMPUTER 5+ or MEDICAL 5+; Question: You may ask one AFFILIATION question or one RESULT question."
+            graphics="positron-emission-tomography-lab-allentown-pennsylvania.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="1 RP"/>
+            <attr key="costnumber" value="1"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Multi, Affiliation, Result, Computer, Medical"/>
+            <attr key="id" value="XF97-0472x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Nisei"/>
+            <attr key="prerequisite" value="COMPUTER 5+ or MEDICAL 5+"/>
+            <attr key="question" value="You may ask one AFFILIATION question or one RESULT question."/>
+        </card>
+        <card name="STRIKERS COVE, HEUVALMAN'S LAKE, BLUE RIDGE MOUNTAINS, GEORGIA" text="Prerequisite: EVIDENCE COLLECTION 4+; Question: You may ask one AFFILIATION question." graphics="strikers-cove-heuvalman-s-lake-blue-ridge-mountains-georgia.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Mono, Affiliation, Evidence Collection"/>
+            <attr key="id" value="XF97-0473x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Quagmire"/>
+            <attr key="prerequisite" value="EVIDENCE COLLECTION 4+"/>
+            <attr key="question" value="You may ask one AFFILIATION question."/>
+        </card>
+        <card name="STRUGHOLD MINING COMPANY, RURAL WEST VIRGINIA" text="Prerequisite: Sciences 4+; Question: You may ask one RESULT question." graphics="strughold-mining-company-rural-west-virginia.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Mono, Result, Sciences"/>
+            <attr key="id" value="XF97-0474x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Paper Clip"/>
+            <attr key="prerequisite" value="Sciences 4+"/>
+            <attr key="question" value="You may ask one RESULT question."/>
+        </card>
+        <card name="TESOS DOS BICHOS EXCAVATION, ECQUADORIAN HIGHLANDS, SOUTH AMERICA" text="Prerequisite: OBSERVATION 4+; Question: You may ask one METHOD question." graphics="tesos-dos-bichos-excavation-ecquadorian-highlands-south-america.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Mono, Method, Observation"/>
+            <attr key="id" value="XF97-0475x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="Teso dos Bichos"/>
+            <attr key="prerequisite" value="OBSERVATION 4+"/>
+            <attr key="question" value="You may ask one METHOD question."/>
+        </card>
+        <card name="VIRGIL INCANTO'S APARTMENT, CLEVELAND, OHIO" text="Prerequisite: COMPUTER 4+; Question: You may ask one AFFILIATION question." graphics="virgil-incanto-s-apartment-cleveland-ohio.jpg">
+            <attr key="type" value="Site"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Site, Mono, Affiliation, Computer"/>
+            <attr key="id" value="XF97-0476x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="2Shy"/>
+            <attr key="prerequisite" value="COMPUTER 4+"/>
+            <attr key="question" value="You may ask one AFFILIATION question."/>
+        </card>
+        <card name="AGENT DAN KAZANJIAN" text="Adds 3 to one Team's COMPUTER skill check." graphics="agent-dan-kazanjian.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Computer"/>
+            <attr key="id" value="XF97-0477x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="2Shy"/>
+            <attr key="activators" value="Active, Computer"/>
+        </card>
+        <card name="CARINA MAYWALD" text="Adds 3 to one Team's BEHAVIORAL skill check." graphics="carina-maywald.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Behavioral"/>
+            <attr key="id" value="XF97-0478x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Revalations"/>
+            <attr key="activators" value="Active, Behavioral"/>
+        </card>
+        <card name="COAST GUARD LIEUTENANT" text="Adds 1 to one Team's ALIEN INVESTIGATION or CRIMINAL INVESTIGATION skill check." graphics="coast-guard-lieutenant.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Alien Investigation, Criminal Investigation"/>
+            <attr key="id" value="XF97-0479x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Nisei"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="DETECTIVE ALAN CROSS" text="Adds 2 to one Team's EVIDENCE COLLECTION or adds 1 to one Team's SUBTERFUGE skill check." graphics="detective-alan-cross.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Evidence Collection, Subterfuge"/>
+            <attr key="id" value="XF97-0480x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="2Shy"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="DETECTIVE CLINE" text="Adds 1 to one Team's EVIDENCE COLLECTION or OBSERVATION skill check. While this card is in play, the Witness card &quot;The Stupendous Yappi&quot; may be played for free." graphics="detective-cline.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Evidence Collection, Observation"/>
+            <attr key="id" value="XF97-0481x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Clyde Bruckman's Final Repose"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="DETECTIVE HAVEZ" text="Adds 1 to one Team's BUREAUCRACY or EVIDENCE COLLECTION skill check. May be played for Cost minus 1 RP if Witness &quot;Detective Cline&quot; is in play." graphics="detective-havez.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Bureaucracy, Evidence Collection"/>
+            <attr key="id" value="XF97-0482x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Clyde Bruckman's Final Repose"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="DETECTIVE WALTER EUBANKS" text="Adds 3 to one Team's OBSERVATION skill check." graphics="detective-walter-eubanks.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Observation"/>
+            <attr key="id" value="XF97-0483x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Oubliette"/>
+            <attr key="activators" value="Active, Observation"/>
+        </card>
+        <card name="DR. ALEXANDER IVANOV" text="Adds 3 to one Team's SCIENCES skill check." graphics="dr-alexander-ivanov.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Sciences"/>
+            <attr key="id" value="XF97-0484x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="activators" value="Active, Sciences"/>
+        </card>
+        <card name="DR. BAMBI BERENBAUM" text="Adds 2 to one Team's SCIENCES or add 1 to one Team's BEHAVIORAL skill check." graphics="dr-bambi-berenbaum.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Behavioral, Sciences"/>
+            <attr key="id" value="XF97-0485x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="DR. BUGGER" text="Adds 2 to one Team's SCIENCES or adds one to one Team's MEDICAL skill check." graphics="dr-bugger.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Medical, Sciences"/>
+            <attr key="id" value="XF97-0486x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="DR. JEFF ECKERLE" text="Adds 2 to one Team's COMPUTER or 1 to one Team's SCIENCES skill check." graphics="dr-jeff-eckerle.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Computer, Sciences"/>
+            <attr key="id" value="XF97-0487x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="DR. RICK NEWTON" text="Adds 1 to one Team's MEDICAL or EVIDENCE COLLECTION skill check." graphics="dr-rick-newton.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Evidence Collection, Medical"/>
+            <attr key="id" value="XF97-0488x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="War of the Coprophages"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="ELLEN KAMINSKI" text="Adds 2 to one Team's COMPUTER or adds 1 to one Team's SUBTERFUGE skill check." graphics="ellen-kaminski.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Computer, Subterfuge"/>
+            <attr key="id" value="XF97-0489x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="2Shy"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="ERIC HOSTEEN" text="Adds 2 to one Team's OBSERVATION or adds 1 to one Team's ALIEN INVESTIGATION skill check." graphics="eric-hosteen.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Alien Investigation, Observation"/>
+            <attr key="id" value="XF97-0490x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="The Blessing Way"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="ESCALANTE" text="Adds 1 to one Team's ALIEN INVESTIGATION or MEDICAL skill check." graphics="escalante.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Alien Investigation, Medical"/>
+            <attr key="id" value="XF97-0491x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="731"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="GENERAL THOMAS CALLAHAN" text="Adds 3 to one Team's BUREAUCRACY or adds 2 to one Team's BEHAVIORAL skill check." graphics="general-thomas-callahan.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Behavioral, Bureaucracy"/>
+            <attr key="id" value="XF97-0492x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="The Walk"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="JIM ULLRICH" text="Adds 1 to one Team's BEHAVIORAL or MEDICAL skill check." graphics="jim-ullrich.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Behavioral, Medical"/>
+            <attr key="id" value="XF97-0493x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="The List"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="LOTTIE HOLOWAY" text="Adds 3 to one Team's ALIEN INVESTIGATION skill check." graphics="lottie-holoway.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Alien Investigation"/>
+            <attr key="id" value="XF97-0494x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Nisei"/>
+            <attr key="activators" value="Active, Alien Investigation"/>
+        </card>
+        <card name="LT. COLONEL VICTOR STANS" text="Adds 1 to one Team's EVIDENCE COLLECTION or SUBTTERFUGE skill check, or play this card to negate the Adversary &quot;The Walk.&quot;" graphics="lt-colonel-victor-stans.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Evidence Collection, Subterfuge"/>
+            <attr key="id" value="XF97-0495x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="The Walk"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="LUCY HOUSEHOLDER" text="Adds 2 to one Team's OBSERVATION or adds 1 to one Team's EVIDENCE COLLECTION skill check, or play this card when your opponent is about to remove one of your cards from the game. Remove this card instead."
+            graphics="lucy-householder.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Evidence Collection, Observation"/>
+            <attr key="id" value="XF97-0496x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Oubliette"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="MICHAEL KRYDER" text="Adds 1 to one Team's OCCULT INVESTIGATION or OBSERVATION skill check, or you may play this card to look at all Adversaries in opponent's hand." graphics="michael-kryder.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Occult Investigation, Observation"/>
+            <attr key="id" value="XF97-0497x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Revelations"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="NAVAJO ELDER" text="Adds 2 to one Team's MEDICAL or adds 1 to one Team's OBSERVATION skill check." graphics="navajo-elder.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Medical, Observation"/>
+            <attr key="id" value="XF97-0498x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="The Blessing Way"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="OWEN JARVIS" text="Adds 3 to one Team's OCCULT INVESTIGATION skill check, or return one OCCULT Adversary that is played on your team to the bottom of the owning player's Bureau Deck." graphics="owen-jarvis.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="4 RP"/>
+            <attr key="costnumber" value="4"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Occult Investigation"/>
+            <attr key="id" value="XF97-0499x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Revelations"/>
+            <attr key="activators" value="Active, Occult Investigation"/>
+        </card>
+        <card name="PARMELLY" text="Adds 1 to one Team's BUREAUCRACY or SUBTERFUGE skill check." graphics="parmelly.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Bureaucracy, Subterfuge"/>
+            <attr key="id" value="XF97-0500x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="The List"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="PENNY NORTHERN" text="Adds 1 to one Team's ALIEN INVESTIGATION or SCIENCES skill check." graphics="penny-northern.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Alien Investicationk, Sciences"/>
+            <attr key="id" value="XF97-0501x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="Nisei"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="SAMMON ROQUE" text="Adds 2 to one Team's BUREAUCRACY or adds 1 to one Team's OBSERVATION skill check." graphics="sammon-roque.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Bureaucracy, Observation"/>
+            <attr key="id" value="XF97-0502x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="The List"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="SHARON KIVEAT" text="Adds 1 to one Team's BEHAVIORAL or OCCULT INVESTIGATION skill check, or return one EVOLUTIONARY Adversary that is played on your team to the bottom of the owning player's Bureau Deck." graphics="sharon-kiveat.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Behavioral, Occult Investigation"/>
+            <attr key="id" value="XF97-0503x1"/>
+            <attr key="rarity" value="C"/>
+            <attr key="episode" value="D.P.O."/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="SHARON SKINNER" text="As long as this card is in play, Skinner cannot be affected by any CONSPIRACY card that would specifically affect him." graphics="sharon-skinner.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="2 RP"/>
+            <attr key="costnumber" value="2"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Resource"/>
+            <attr key="id" value="XF97-0504x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Avatar"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="SHERIFF JOHN TELLER" text="Adds 2 to one Team's CRIMINAL INVESTIGATION or adds 1 to one Team's SCIENCES skill check." graphics="sheriff-john-teller.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Criminal Investigation, Sciences"/>
+            <attr key="id" value="XF97-0505x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="D.P.O."/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="STAN BUXTON" text="Adds 2 to one Team's MEDICAL or adds 1 to one Team's SCIENCES skill check." graphics="stan-buxton.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Medical, Sciences"/>
+            <attr key="id" value="XF97-0506x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="D.P.O."/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="THE STUPENDOUS YAPPI"
+            text="Flip the top card of your Bureau Deck. Discard the revealed card. If the revealed card has the Keyword CONSPIRACY, subtract 1 from the skill check. If not, add 3 to one CRIMINAL INVESTIGATION or OCCULT INVESTIGATION skill check."
+            graphics="the-stupendous-yappi.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="1 RP"/>
+            <attr key="costnumber" value="1"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Criminal Investigation, Occult Investigation"/>
+            <attr key="id" value="XF97-0507x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Clyde Bruckman's Final Repose"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="VICTOR KLEMPER" text="Adds 3 to one Team's MEDICAL or adds 2 to one Team's SCIENCES skill check. If your opponent plays a GOVERNMENT Adversary while this card is in play, the Victor Klemper card is negated and removed from the game."
+            graphics="victor-klemper.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Medical, Sciences"/>
+            <attr key="id" value="XF97-0508x1"/>
+            <attr key="rarity" value="R"/>
+            <attr key="episode" value="Paper Clip"/>
+            <attr key="activators" value="Active"/>
+        </card>
+        <card name="WARDEN LEO BRODEUR" text="Adds 2 to one Team's BEHAVIORAL or adds 1 to one Team's CRIMINAL INVESTIGATION skill check." graphics="warden-leo-brodeur.jpg">
+            <attr key="type" value="Witness"/>
+            <attr key="cost" value="3 RP"/>
+            <attr key="costnumber" value="3"/>
+            <attr key="costsuit" value="RP"/>
+            <attr key="keywords" value="Witness, Behavioral, Criminal Investigation"/>
+            <attr key="id" value="XF97-0509x1"/>
+            <attr key="rarity" value="U"/>
+            <attr key="episode" value="The List"/>
+            <attr key="activators" value="Active"/>
+        </card>
+    </cards>
+</ccg-setinfo>

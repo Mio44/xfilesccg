@@ -1,0 +1,46 @@
+deck_rules=(,);
+server_description="Universal";
+
+deck_rules{"Empty"}=(,);
+deck_rules{"Empty"}{""}=(
+  ("RuleDeckSizes",(0,)),
+  ("RulePass", NULL),
+);
+
+deck_rules{"Advanced"}=(,);
+deck_rules{"Advanced"}{"deck"}=(
+  ("RuleDeckMinimum",60),
+  ("RuleLimitByExpression",(0,"Attr('type',#) == 'X-File' || find('Killer', Attr('keywords',#)) != NULL")),
+  ("RuleCardLimitGeneral",2),
+  ("RulePass", NULL),
+);
+deck_rules{"Advanced"}{"xfiles"}=(
+  ("RuleLimitByExpression",(0,"Attr('type',#) != 'X-File'")),
+  ("RulePass", NULL),  
+);
+deck_rules{"Advanced"}{"agents"}=(
+  ("RuleDeckMinimum",3),
+  ("RuleLimitByExpression",(0,"Attr('type',#) != 'Agent'")),  
+  ("RuleCheckExpression",("The sum of costs of your Agents must not exceed 20","sum(apply('toint', Attr('costnumber',#))) <= 20")),
+  ("RuleCardLimitGeneral",1),  
+  ("RulePass", NULL),  
+);
+
+deck_rules{"Advanced_Killer"}=(,);
+deck_rules{"Advanced_Killer"}{"deck"}=(
+  ("RuleDeckMinimum",60),
+  ("RuleLimitByExpression",(0,"Attr('type',#) == 'X-File'")),
+  ("RuleCardLimitGeneral",2),
+  ("RulePass", NULL),
+);
+deck_rules{"Advanced_Killer"}{"xfiles"}=(
+  ("RuleLimitByExpression",(0,"Attr('type',#) != 'X-File'")),
+  ("RulePass", NULL),  
+);
+deck_rules{"Advanced_Killer"}{"agents"}=(
+  ("RuleDeckMinimum",3),
+  ("RuleLimitByExpression",(0,"Attr('type',#) != 'Agent'")),  
+  ("RuleCheckExpression",("The sum of costs of your Agents must not exceed 20","sum(apply('toint', Attr('costnumber',#))) <= 20")),
+  ("RuleCardLimitGeneral",1),  
+  ("RulePass", NULL),  
+);
