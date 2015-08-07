@@ -33,7 +33,7 @@ mkdir gccg
 cd gccg
 wget http://gccg.bornano.fr/gccg/gccg-core-1.0.11.tgz
 tar xzvf gccg-core-1.0.11.tgz
-./gccg_package source add https://raw.githubusercontent.com/Mio44/xfilesccg/master/
+./gccg_package source add http://Mio44.github.io
 ./gccg_package update
 ./gccg_package install client fonts <platform> xf xf-cards
 ```
@@ -47,7 +47,7 @@ mkdir gccg
 cd gccg
 wget http://gccg.bornano.fr/gccg/gccg-core-1.0.11.tgz
 tar xzvf gccg-core-1.0.11.tgz
-./gccg_package source add https://raw.githubusercontent.com/Mio44/xfilesccg/master/
+./gccg_package source add http://Mio44.github.io
 ./gccg_package update
 ./gccg_package install client fonts source xf xf-cards
 make all
@@ -63,7 +63,7 @@ To keep everything updated, run `./gccg_package update` while the game is not ru
 * Download and extract the [Windows installer](http://gccg.sourceforge.net/downloads/gccg_install.zip) to your hard drive, e.g. to a folder called `gccg`.
 * Run the following commands in the extracted folder:
 ```
-perl gccg_package source add https://raw.githubusercontent.com/Mio44/xfilesccg/master/
+perl gccg_package source add http://Mio44.github.io
 perl gccg_package update
 perl gccg_package install client fonts windows32 xf xf-cards
 ```
