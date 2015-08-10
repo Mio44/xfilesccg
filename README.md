@@ -33,7 +33,7 @@ mkdir gccg
 cd gccg
 wget http://gccg.bornano.fr/gccg/gccg-core-1.0.11.tgz
 tar xzvf gccg-core-1.0.11.tgz
-./gccg_package source add http://Mio44.github.io
+./gccg_package source add http://Mio44.github.io/xfilesccg
 ./gccg_package update
 ./gccg_package install client fonts <platform> xf xf-cards
 ```
@@ -47,7 +47,7 @@ mkdir gccg
 cd gccg
 wget http://gccg.bornano.fr/gccg/gccg-core-1.0.11.tgz
 tar xzvf gccg-core-1.0.11.tgz
-./gccg_package source add http://Mio44.github.io
+./gccg_package source add http://Mio44.github.io/xfilesccg
 ./gccg_package update
 ./gccg_package install client fonts source xf xf-cards
 make all
@@ -63,33 +63,28 @@ To keep everything updated, run `./gccg_package update` while the game is not ru
 * Download and extract the [Windows installer](http://gccg.sourceforge.net/downloads/gccg_install.zip) to your hard drive, e.g. to a folder called `gccg`.
 * Run the following commands in the extracted folder:
 ```
-perl gccg_package source add http://Mio44.github.io
+perl gccg_package source add http://Mio44.github.io/xfilesccg
 perl gccg_package update
 perl gccg_package install client fonts windows32 xf xf-cards
 ```
 * To start the client, Run `Xf.bat`.
 * To keep everything updated, run `Update Everything.bat` while the game is not running.
 
-# Offline Mode
+# Primary Game Server
 
-After starting the game, the client window opens. Note that you will be running the game client in offline mode.  
-That means you will be able to browse the cards and build decks, but you won't be able to trade cards or play the game.
+After starting the game client, the client window opens. You should be connected to the primary game server. Now you are ready to play the game online against other players.
 * Press Ctrl+B to view the card collection. These are all the cards in the game.
 * Press Ctrl+I to import one of the predefined decks.
 * Press Ctrl+E to edit the active deck.
-* For the steps to create your own deck from scratch, or other things, see the [GCCG homepage](http://gccg.sourceforge.net/).
+* To chat with other players, simply type the message you want to send and press Enter.
+* To start a match, left click on one of the available tables to sit down, and middle click to start the playing.
+* For the steps to create your own deck from scratch, and other information, see the [GCCG homepage](http://gccg.sourceforge.net/).
 
-# Online Mode
+# Offline Mode
 
-To trade cards and play the game, you need to connect your game client to a game server.  
-You need to know the URL or IP address of the game server to do that.  
-Then, simply start the client with the following command:
-* on Linux & Mac, use `./Xf --server <url/ip>`
-* on Windows, use `Xf.bat --server <url/ip>`
+If a connection to the game server cannot be established, you will be running the client in offline mode. In this case, you will be able to browse the cards and build decks, but you won't be able to trade cards or play the game.
 
-Note: currently, no public game server exists.
-
-# Server
+# Alternative Game Server
 
 To run your own game server on your PC, you need to install some additional modules.  
 The server itself consists of 3 or more separate processes which you need to run:
@@ -131,5 +126,7 @@ perl gccg_package install server xf-server
 
 ### Connecting
 
-If you have a game server running on your PC and want to connect the game client to it, you can launch it without the `--server` parameter.
-The client automatically connects to a server running on the same PC.
+To connect to your game server (or any other game server than the default one), simply start the client with the following command:
+* on Linux & Mac, use `./Xf --server <url/ip>` (for a server running on the same PC, use `./Xf --server localhost`)
+* on Windows, use `Xf.bat --server <url/ip>` (for a server running on the same PC, use `Xf.bat --server localhost`)
+
